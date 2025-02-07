@@ -1,0 +1,113 @@
+:root {
+    --header-image: url('test');
+    --body-bg-image: url('test');
+    --content: #43256E;
+    /* queste sono variabili*/
+}
+/* font personalizzato DA CAMBIARE*/
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+/* font, colore di sfondo e immagine */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: #15593e;
+    background-image: url('assets/sfondotest.png');
+}
+/* limita la larghezza del sito a 900px e lo centra */
+#container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* layout flexbox: imposta display: flex per allineare sidebar e contenuto principale */
+#flex {
+    display: flex;
+}
+/* aside {
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+} */
+/* main {
+    background-color: #ac90d3;
+    flex: 1;
+    padding: 20px;
+}*/ 
+/* responsività mobile: su schermi più piccoli (max 800px di larghezza), le sidebar diventano blocchi a larghezza piena sotto il contenuto principale */
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+    main {
+        order: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+    #leftSidebar {
+        order: 2;
+    }
+    #rightSidebar {
+        order: 3;
+    }
+}
+/* FINITO */
+.header {
+    background-image: url("assets/header.png");
+    background-color: rgba(255, 255, 255, 0);
+    background-size: 100%;
+    height: 125px;
+    border: 30px solid transparent;
+    background-repeat: no-repeat;
+}
+/*left sidebar*/
+#leftSidebar {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 20%;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    box-sizing: border-box;
+
+}
+    #featuredImage {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    #featuredImage img {
+        width: 100%; 
+        height: auto;
+        display: block; /* Remove extra space below the image */
+    }
+    #leftBox {
+        width: 100%;
+        padding: 10px;
+        background-color: brown;
+        color:white;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+#main {
+    flex-grow: 4;
+    flex-basis: 40%;
+    background-color: #15593e;
+}
+#rightSidebar {
+    flex-grow: 1;
+    background-color: #15593e;
+    flex-basis: 20%;
+}
+#footer {
+    color: antiquewhite;
+}

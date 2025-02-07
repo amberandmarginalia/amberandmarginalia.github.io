@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/amberandmarginalia/amberandmarginalia.github.io.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[credentials]
+	helper = store
+[user]
+	name = amberandmarginalia
+	email = amberandmarginalia@proton.me
+[credential "https://github.com"]
+	username = amberandmarginalia
+	helper = store
