@@ -17,7 +17,7 @@
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = '/styles/comment-widget-pink.css';
+const s_stylePath = '/styles/comment-widget.css';
 const s_formId = '1FAIpQLSeAdkKyAmGfZnPy4Z1BkI3-nsyf5uAtgGxZG3-NPyL08yYkLQ';
 const s_nameId = '16014398';
 const s_websiteId = '1564858311';
@@ -52,8 +52,8 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
 const s_widgetTitle = 'Sign my guestbook!';
-const s_nameFieldLabel = 'Name';
-const s_websiteFieldLabel = 'Link (Optional)';
+const s_nameFieldLabel = 'Signed,';
+const s_websiteFieldLabel = 'Hailing from (link, optional)';
 const s_textFieldLabel = '';
 const s_submitButtonLabel = 'Submit';
 const s_loadingText = 'Loading comments...';
@@ -91,6 +91,11 @@ const v_mainHtml = `
 `;
 const v_formHtml = `
     <h2 id="c_widgetTitle">${s_widgetTitle}</h2>
+    
+    <div id="c_textWrapper" class="c-inputWrapper">
+        <label class="c-label c-textLabel" for="entry.${s_textId}">${s_textFieldLabel}</label>
+        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" rows="4" cols="50"  maxlength="${s_maxLength}" required></textarea>
+    </div>
 
     <div id="c_nameWrapper" class="c-inputWrapper">
         <label class="c-label c-nameLabel" for="entry.${s_nameId}">${s_nameFieldLabel}</label>
@@ -100,11 +105,6 @@ const v_formHtml = `
     <div id="c_websiteWrapper" class="c-inputWrapper">
         <label class="c-label c-websiteLabel" for="entry.${s_websiteId}">${s_websiteFieldLabel}</label>
         <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" type="url" pattern="https://.*">
-    </div>
-
-    <div id="c_textWrapper" class="c-inputWrapper">
-        <label class="c-label c-textLabel" for="entry.${s_textId}">${s_textFieldLabel}</label>
-        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" rows="4" cols="50"  maxlength="${s_maxLength}" required></textarea>
     </div>
 
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
@@ -372,6 +372,7 @@ function createComment(data) {
     let name = document.createElement('h3');
     let filteredName = data.Name;
     if (s_wordFilterOn) {filteredName = filteredName.replace(v_filteredWords, s_filterReplacement)}
+    // if (data.Website) {filteredName = filteredName + '     from'} 
     name.innerText = filteredName;
     name.className = 'c-name';
     comment.appendChild(name);
@@ -385,7 +386,11 @@ function createComment(data) {
     // Website URL, if one was provided
     if (data.Website) {
         let site = document.createElement('a');
-        site.innerText = s_websiteText;
+        let url = new URL(data.Website);
+        if (url.pathname != '/') {
+            site.innerText = url.host + url.pathname;
+        } else {site.innerText = url.host}
+        // site.innerText = s_websiteText;
         site.href = data.Website;
         site.className = 'c-site';
         comment.appendChild(site);

@@ -15,39 +15,75 @@
     
     <div class="header">
       <a href="/index.html">
-        <img src="assets/header.png" alt="Amber & Marginalia">
+        <img src="/assets/header.png" alt="Amber & Marginalia">
       </a> 
     </div>
 
     <div id="flex"> <!-- contenuti flessibili, qui il layout a tre colonne --> 
+
       <aside id="leftSidebar"> 
         <!-- immagine della settimana  DA AGGIUNGERE -->
+        <a href="/pages/imagegallery.html">
         <div id="featuredImage">
           <span title="This week's featured image is 'some image' by 'just a guy'">
-            <img src="/assets/websitereference/Immagine incollata (5).png" alt="This is this week's featured image.">
-          </span>
-        </div>
-        <div id="leftBox"> some text
-          <p class="boldtext"> this is some bold text</p>
-          <p class="bolditalictext"> this is some bolditalic text</p>
-          <p class="uppertext"> This is some Upper text</p>
-          <p class="upperboldtext"> this is some Upper Bold text</p>
-        </div>
-      </aside>
+              <img src="/assets/websitereference/Immagine incollata (5).png" alt="This is this week's featured image.">
+            </span>
+          </div>
+        </a>
 
-      <aside id="main"> <!-- content --> 
-        <h1 class="upperboldtext">Welcome!</h1>
-        <p class="italictext">Hello traveler, welcome to my little corner of the internet</p>
-      </aside>
+        <div id="leftBox"> 
+          <div style="margin-right: 10px;">
+            <strong class="upperboldtext">To-do:</strong><br>
+            <ul>
+              <li>imagegallery.html + css</li>
+              <li>about</li>
+              <li>links out + buttons (and my button!!!)</li>
+              <li>credits and resources</li>
+              <li>finish guestbook.css</li>
+              <li>add grab a souvenir station</li>
+              <li>add status block</li>
+              <li>write main page (add featured page)</li>
+              <li>books page (use details and summary tag)</li>
+              <li class="upperboldtext"> decide on a color palette!!</li>
+              <li>draw some assets (borders/little guys)</li>
+            </ul>
+          </div>
+        </div>
 
-      <aside id="rightSidebar" style="margin-left: 10px;"> rightSidebar <!-- content --> 
+      </aside>
+      <!-- MAIN -->
+      <aside class="main"> <!-- content --> 
+        <h1 class="upperboldtext" style="text-align: center;">Welcome!</h1>
+        <p class="italictext">Hello traveler, welcome to my little corner of the internet!</p>
+
+      </aside>
+      <aside id="rightSidebar" style="margin-left: 10px;">
+        <!-- NAV MENU -->
+        <div id="navMenuTitle" class="upperboldtext" style="text-align: center; font-size: larger; padding-top: 10px;">Nav Menu</div> <!-- nav menu items --> 
+        <div id="navMenu" style="padding: 20px; letter-spacing: 1px;" class="bolditalictext">
+          <nav>
+            <a href="/pages/about.html">About</a><br>
+            <a href="/pages/linksOut.html">Links Out</a><br>
+            <a href="/pages/resources.html">Credits and Resources</a><br>
+          </nav>
+        </div>
+        <hr /> <!--horizontal line-->
         <a href="/pages/guestbook.html" class="bolditalictext">Guestbook</a>
+        <!-- UPDATES TAB -->
+        <div class="updatesContainer" style="text-align: center;">
+          <h2 class="uppertext">Updates</h2>
+            <div class="updatesContent">
+              <stong>9th feb 2025:</stong><br>Added guestbook<br><br>
+              <strong>8th feb 2025:</strong><br>Created assets on krita<br><br>
+              <strong>6th feb 2025:</strong><br>Github repo created<br>
+          </div>
+        </div>
       </aside>
     </div>
-
-    <footer id="footer" style="margin-top: 10px;">
+    <!-- FOOTER -->
+    <footer>
       <span title="Hiiii!">
-      Amber & Marginalia est. 2025 - Coded with love.
+      Amber & Marginalia est. 2025 - Coded with love ❦
       </span>
     </footer>
   </div>
