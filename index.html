@@ -5,28 +5,51 @@
   <meta charset="UTF-8"> <!-- codifica dei caratteri -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- garantisce che il sito sia responsive (si adatta a dimensioni diverse di schermo)--> 
   <title>Amber & Marginalia</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
 
   <div id="container"> <!-- contiene tutto il sito per facilitare la gestione del layout--> 
     
-    <div class="header"> </div>
+    <div class="header">
+      <a href="/index.html">
+        <img src="assets/header.png" alt="Amber & Marginalia">
+      </a> 
+    </div>
 
     <div id="flex"> <!-- contenuti flessibili, qui il layout a tre colonne --> 
       <aside id="leftSidebar"> 
-        <!-- immagine della settimana  -->
+        <!-- immagine della settimana  DA AGGIUNGERE -->
         <div id="featuredImage">
-          <img src="/assets/website.png" alt="This is this week's featured image.">
+          <span title="This week's featured image is 'some image' by 'just a guy'">
+            <img src="/assets/websitereference/Immagine incollata (5).png" alt="This is this week's featured image.">
+          </span>
         </div>
-        <div id="leftBox"> some text</div>
+        <div id="leftBox"> some text
+          <p class="boldtext"> this is some bold text</p>
+          <p class="bolditalictext"> this is some bolditalic text</p>
+          <p class="uppertext"> This is some Upper text</p>
+          <p class="upperboldtext"> this is some Upper Bold text</p>
+        </div>
       </aside>
-      <aside id="main"> main<!-- content --> </aside>
-      <aside id="rightSidebar" style="margin-left: 10px;"> rightSidebar <!-- content --> </aside>
+
+      <aside id="main"> <!-- content --> 
+        <h1 class="upperboldtext">Welcome!</h1>
+        <p class="italictext">Hello traveler, welcome to my little corner of the internet</p>
+      </aside>
+
+      <aside id="rightSidebar" style="margin-left: 10px;"> rightSidebar <!-- content --> 
+        <a href="/pages/guestbook.html" class="bolditalictext">Guestbook</a>
+      </aside>
     </div>
 
-    <footer id="footer" style="margin-top: 10px;"">Amber & Marginalia est. 2025 - Coded with love. </footer>
+    <footer id="footer" style="margin-top: 10px;">
+      <span title="Hiiii!">
+      Amber & Marginalia est. 2025 - Coded with love.
+      </span>
+    </footer>
   </div>
 </body>
 

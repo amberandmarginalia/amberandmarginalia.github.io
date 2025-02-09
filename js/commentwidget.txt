@@ -1,0 +1,11 @@
+https://docs.google.com/forms/d/e/1FAIpQLSeAdkKyAmGfZnPy4Z1BkI3-nsyf5uAtgGxZG3-NPyL08yYkLQ/viewform?usp=pp_url&entry.160143985=Name&entry.1564858311=Website&entry.695398522=Text&entry.847632911=Page&entry.173896026=Reply
+
+const s_formId = '1FAIpQLSeAdkKyAmGfZnPy4Z1BkI3-nsyf5uAtgGxZG3-NPyL08yYkLQ'
+const s_nameId = '16014398'
+const s_websiteId = '1564858311'
+const s_textId = '695398522'
+const s_pageId = '847632911'
+const s_replyId = '173896026'
+const s_sheetId = '1JiX-u9PuspLRsNKPKzh6mlAYgTLaG-OzOtWDeGp_Mo4'
+
+https://docs.google.com/spreadsheets/d/1JiX-u9PuspLRsNKPKzh6mlAYgTLaG-OzOtWDeGp_Mo4/edit?resourcekey=&gid=880828187#gid=880828187

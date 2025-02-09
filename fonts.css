@@ -1,0 +1,56 @@
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IM Fell';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/IM_Fell_English/imfellenglish-regular-webfont.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* im-fell-english-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IM Fell';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/assets/fonts/IM_Fell_English/imfellenglish-italic-webfont.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* im-fell-english-sc-regular - latin */
+  @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'IM Fell SC';
+      font-style: normal;
+      font-weight: 400;
+      src: url('/assets/fonts/IM_Fell_English_SC/imfellenglishsc-regular-webfont.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+.regtext {
+    font-family: 'IM Fell';
+    font-style: normal;
+    font-weight: 400;
+}
+.boldtext {
+    font-family: 'IM Fell';
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 0.3px 0 0 currentColor, -0.3px 0 0 currentColor;
+}
+.italictext {
+    font-family: 'IM Fell';
+    font-style: italic;
+    font-weight: 400;
+}
+.bolditalictext {
+    font-family: 'IM Fell';
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 0.3px 0 0 currentColor, -0.3px 0 0 currentColor;
+}
+.uppertext {
+    font-family: 'IM Fell SC';
+    font-style: normal;
+    font-weight: 400;
+}
+.upperboldtext {
+    font-family: 'IM Fell SC';
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 0.3px 0 0 currentColor, -0.3px 0 0 currentColor;
+}
