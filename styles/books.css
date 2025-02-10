@@ -1,0 +1,48 @@
+body {
+    background-color: darkgreen;
+}
+.shelf {
+    display: block;
+    border: solid 0.5px;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+.book {
+    border: solid 0.8px red;
+    display: inline-block;
+    width: 220px;
+    height: auto;
+    /* display: black; */
+    vertical-align: top;
+    padding: 30px 20px 10px 0px;
+    margin: 20px -5px;
+
+}
+
+.book:hover {border-bottom: solid 0.9px;}
+
+.book img {height: 300px;}
+
+summary {
+    cursor: pointer;
+    display: inline; 
+    color: transparent;
+}
+p {
+    color: antiquewhite;
+}
+details {
+  display: block
+}
+.center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* background-color: white; */
+    border-top: dashed 1px;
+}
