@@ -1,14 +1,11 @@
-body {
-    background-color: darkgreen;
-}
 .shelf {
     display: block;
-    border: solid 0.5px;
+    border: solid 0.5px transparent;
     margin: 0 auto;
     max-width: 1500px;
 }
 .book {
-    border: solid 0.8px red;
+    border: solid 0.8px transparent;
     display: inline-block;
     width: 220px;
     height: auto;
@@ -44,5 +41,5 @@ details {
     max-width: 1000px;
     margin: 0 auto;
     /* background-color: white; */
-    border-top: dashed 1px;
+    border-top: dashed 1px transparent;
 }
