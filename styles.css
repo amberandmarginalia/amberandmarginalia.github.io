@@ -35,6 +35,14 @@ main {
     padding: 20px;
     border-radius: 5px;
 }
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
 /* responsività mobile: su schermi più piccoli (max 800px di larghezza), le sidebar diventano blocchi a larghezza piena sotto il contenuto principale */
 @media only screen and (max-width: 800px) {
     #flex {
@@ -169,6 +177,10 @@ footer {
     overflow-y: auto; /* Show scrollbar when content overflows */
     padding-right: 10px; /* Prevent text from touching the scrollbar */
     font-size: 14px;
+}
+#souvenir {
+    display: flex;
+    flex-direction: column;
 }
 /* LINKS STYLING */
 a:link {color:bisque; text-decoration: none;}
