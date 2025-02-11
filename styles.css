@@ -1,17 +1,19 @@
 :root {
-    --header-image: url('test');
-    --body-bg-image: url('test');
-    --content: #43256E;
     /* queste sono variabili*/
+    --header-image: url('/assets/header.png');
+    --bg-image: url('/assets/mainbackground.png');
+    --dark-colour: #2d1e2d;
+    --light-colour: #3c3544;
+    --lightlilac: rgb(195, 182, 210);
 }
 /* font, colore di sfondo e immagine */
 body {
     font-family: 'IM Fell';
     font-style: regular;
-    color: antiquewhite;
+    color: #faebd7;
     margin: 0;
-    background-color: #3c3544;
-    background-image: url('assets/mainbackground.png');
+    background-color: var(--light-colour);
+    background-image: var(--bg-image);
 }
 /* contenitore per tutto il sito */
 #container {
@@ -29,7 +31,7 @@ span {
     cursor: help;
 }
 main {
-    background-color: #2d1e2d;
+    background-color: var(--dark-colour);
     padding: 20px;
     border-radius: 5px;
 }
@@ -85,7 +87,7 @@ main {
     flex-basis: 20%;
     flex-direction: column;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 20px;
     box-sizing: border-box;
 
 }
@@ -94,7 +96,7 @@ main {
         background-clip: padding-box;
         max-width: 100%;
         height: auto;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         border: 32px solid;
         border-image-source: url('assets/goldFrame.png');
         border-image-slice: 208;
@@ -108,54 +110,45 @@ main {
             display: block; /* removes extra space at the bottom */
         }
     #leftBox {
-        margin-top: 5px;
         width: 100%;
-        padding:  23px 10px 23px 10px;
-        background-image: url("/assets/scrollBackground.png");
-        background-clip: content-box;
-        border: 0px solid transparent;
-        border-image-source: url('/assets/scroll\ border.png');
-        border-image-slice: 210 175 210 175; 
-        border-image-width: 35px;
-        border-image-outset: 10px;
-        border-image-repeat: stretch;
         box-sizing: border-box;
     }
-    #leftBox > * {padding: 10px;}
 .main {
     flex-grow: 4;
     flex-basis: 40%;
-    background-color: #3c3544;
-    padding: 10px;
+    background-color: var(--light-colour);
+    padding: 20px;
     max-width: 100%;
     height: 100%;
 }
+.scrollVertical {
+    padding:  23px 10px 23px 10px;
+    background-image: url("/assets/scrollBackground.png");
+    background-clip: content-box;
+    border: 0px solid transparent;
+    border-image-source: url('/assets/scrollBorder.png');
+    border-image-slice: 210 175 210 175; 
+    border-image-width: 35px;
+    border-image-outset: 10px;
+    border-image-repeat: stretch;
+} .scrollVertical > * {padding: 10px}
+
 #rightSidebar {
     flex-grow: 1;
     padding: 10px;
     flex-basis: 20%;
     margin-left: 10px;
+    margin-bottom: 50px;
     width: 100%;
-    padding:  23px 10px 23px 10px;
-    background-image: url("/assets/scrollBackground.png");
-    background-clip: content-box;
-    border: 0px solid transparent;
-    border-image-source: url('/assets/scroll\ border.png');
-    border-image-slice: 210 175 210 175; 
-    border-image-width: 35px;
-    border-image-outset: 10px;
-    border-image-repeat: stretch;
     box-sizing: border-box;
 }
-#rightSidebar > * {padding: 10px}
 footer {
     position: fixed;
     bottom: 0px;
     margin-top: 10px;
     left: 50%; /* Center horizontally (left edge at 50% of viewpoint width) */
     transform: translateX(-50%); /* Fine-tune centering (shifts back by 50% of footer's own width, achieving perfect centering) */
-    background: #3c3544;
-    /* color: #2d1e2d; */
+    background: var(--dark-colour);
     color: antiquewhite;
     border-radius: 20px 20px 0px 0px;
     width: 70%;
@@ -165,14 +158,14 @@ footer {
 }
 .updatesContainer {
     width: auto;
-    height: auto;
-    background-color: #3c3544;
+    height: 50%;
+    background-color: var(--light-colour);
     border: 2px solid #444;
     padding: 0px 15px 15px 15px;
     margin: 20px;
 }
 .updatesContent { /* CHECK HEIGHT PROPERTY AFTER INDEX IS DONE */
-    min-height: 200px; /* Fixed height to enable scrolling */
+    height: 200px; /* Fixed height to enable scrolling */
     overflow-y: auto; /* Show scrollbar when content overflows */
     padding-right: 10px; /* Prevent text from touching the scrollbar */
     font-size: 14px;

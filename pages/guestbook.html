@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- garantisce che il sito sia responsive (si adatta a dimensioni diverse di schermo)--> 
   <title>Amber & Marginalia Guestbook</title>
   <link rel="stylesheet" href="/fonts.css">
-  <link rel="stylesheet" href="/styles.css">
+  <!-- <link rel="stylesheet" href="/styles.css"> -->
+  <link rel="stylesheet" href="/styles/comment-widget.css">
 </head>
 <style>
   body {
@@ -22,12 +23,22 @@
       </a> 
     </div>
     <div id="flex">
-      <h1 class="uppertext">Amber's Guestbook</h1>
-      <p class="regtext">Please sign my guestbook!</p>
-      <div id="c_widget">widget</div>
-      <script src="/js/comment-widget.js"></script>
-      <p>Credits to virtualobserver for their <a href="https://virtualobserver.moe/ayano/comment-widget">comment widget</a>! Try it out if you want full CSS customization and don't mind it using google forms/sheets :3</p>
-      
+
+      <div id="guestbook">
+        <h1 class="uppertext">Amber's Guestbook</h1>
+        <p class="regtext">Please sign my guestbook!</p>
+        <div id="c_widget">widget</div>
+        <script src="/js/comment-widget.js"></script>
+        <p>Credits to virtualobserver for their <a style="color: rgb(195, 182, 210)" href="https://virtualobserver.moe/ayano/comment-widget">comment widget</a>! I'll try to make it work at some point. </p>
+      </div>
+
+      <div id="commentSection">
+        <h3>If the guestbook does not work please leave your comment here!</h3>
+        <p>Sorry for the inconvenience!</p>
+
+        <iframe src="https://www5.cbox.ws/box/?boxid=955403&boxtag=2j50AT" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+      </div>
+
     </div>
   </div>
   </body>

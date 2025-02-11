@@ -1,3 +1,53 @@
+:root {
+    --dark-colour: #2d1e2d;
+    --light-colour: #3c3544;
+    --lightlilac: rgb(195, 182, 210);
+}
+body {
+    font-family: 'IM Fell';
+    font-style: regular;
+    color: antiquewhite;
+    margin: 0;
+    background-color: var(--light-colour);
+    background-image: url('/assets/mainbackground.png');
+}
+#container {
+    padding: 10px;
+    max-width: 1200px; /* larghezza massima del sito */
+    margin: 0 auto; /* centra il sito */
+}
+#flex {
+    display: flex;
+    flex-direction: row;
+}
+#guestbook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 100%; 
+}
+span {
+    cursor: help;
+}
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+    .header img {
+        width: 80%;
+        max-width: 1100px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .header a:hover {
+        opacity: 0.9; /* Slightly fade the image on hover */
+    }
 /*
     Below you will be able to freely customize every aspect of the comment widget.
     Most aspects of the widget are 100% able to be customized in CSS, but for strong structural changes,
@@ -51,7 +101,6 @@
         #c_leftButton - The left <button>
         #c_rightButton - The right <button>
 */
-
 /* Main */
 #c_widget {
     box-sizing: border-box;
@@ -66,20 +115,23 @@
 }
 
 #c_widget button, #c_widget input[type=submit] {
+    margin-left: 20px;
+    margin-bottom: 20px;
     padding: 2px 10px 3.5px 10px;
     text-decoration: none;
 	text-transform: lowercase;
 	text-align: center;
     font-family: 'IM Fell SC';
-    background-color: rgb(144, 0, 0);
-    border: 1px solid #2e0000;
+    background-color: var(--dark-colour);
+    color: antiquewhite;
+    border: 1px solid #444;
     border-radius: 5px;
     cursor: pointer;
 }
 #c_widget button:hover, #c_widget input[type=submit]:hover {
-    background-color: rgb(93, 2, 2);
+    background-color: var(--light-colour);
     color: antiquewhite;
-    border: 1px solid #2e0000;
+    border: 1px solid #444;
 }
 #c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
 #c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
@@ -92,18 +144,25 @@
 #c_inputDiv {
     padding: 10px;
     /* text-transform: lowercase; */
-    background-color: rgba(255, 0, 0, 0.8);
-    border: 3px dashed #03aa00;
-    border-radius: 5px;
-    background-image: url(/assets/websitereference/Immagine\ incollata.png);
-    background-size: 100%;
-    background-repeat: repeat;
+    background-color: var(--dark-colour);
+    padding:  23px 10px 23px 10px;
+    background-image: url("/assets/scrollBackground.png");
+    background-clip: content-box;
+    border: 0px solid transparent;
+    border-image-source: url('/assets/scrollBorder.png');
+    border-image-slice: 210 220 210 220; 
+    border-image-width: 35px;
+    border-image-outset: 10px;
+    border-image-repeat: round;
+    box-sizing: border-box;
+    margin-bottom: 30px;
 }
 #c_container {margin-top: 10px;}
 
 #c_widgetTitle {
     margin: 0;
-    padding: 0;
+    padding-left: 20px;
+    padding-top: 10px;
     font-style: italic;
     text-decoration: underline;
 }
@@ -112,15 +171,16 @@
     display: block;
     margin-top: 5px;
     margin-bottom: 5px;
+    padding-left: 20px;
 }
 .c-input {
     padding: 4px;
     color: #250016;
     border-radius: 4px;
-    border: 5px solid #CE98FB;
+    border: 3px solid var(--light-colour);
 	outline: none;
 }
-.c-input:focus {border: 2px solid #ffcf3e;}
+.c-input:focus {border: 5px solid #ffcf3e;}
 
 .c-textInput {
     width: calc(100% - 10px);
@@ -128,23 +188,23 @@
     resize: none;
 }
 #c_submitButton {display: block;}
-#c_replyingText {color: #00740c;}
+#c_replyingText {color: var(--lightlilac);}
 
 /* Comment section */
 .c-comment {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: rgba(23, 141, 127, 0.75);
-    border: 3px dashed #CE98FB;
+    background-image: url("/assets/scrollBackground.png");
+    border: 1px solid var(--light-colour);
     border-radius: 4px;
 }
 .c-reply {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: rgb(21, 44, 150);
-    border: 3px dashed #3fff8f;
+    background-color: var(--dark-colour);
+    border: 1px solid var(--light-colour);
     border-radius: 4px;
 }
 .c-reply:last-child {margin-bottom: 0;}
@@ -157,9 +217,9 @@
 }
 .c-site {
     text-transform: lowercase;
-    color: #ff8400; /* color of the website link */
+    color: var(--light-colour); /* color of the website link */
 }
-.c-site:hover {color: #211F24;} /* website link on hhover */
+.c-site:hover {color: var(--lightlilac);} /* website link on hhover */
 .c-timestamp {
     float: right;
     opacity: 60%;
@@ -169,7 +229,7 @@
     margin-top: 10px;
     padding: 0;
     text-align: justify;
-    color: #ff6cc2; /* comment text color */
+    color: var(--lightlilac); /* comment text color */
 }
 
 /* Pagination */
