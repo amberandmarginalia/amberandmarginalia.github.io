@@ -48,6 +48,20 @@ span {
     .header a:hover {
         opacity: 0.9; /* Slightly fade the image on hover */
     }
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    #commentSection {
+        order: 1;
+        margin-bottom: 10px;
+    }
+    #guestbook {
+        order: 2;
+        margin-bottom: 10px;
+    }
+}
 /*
     Below you will be able to freely customize every aspect of the comment widget.
     Most aspects of the widget are 100% able to be customized in CSS, but for strong structural changes,
@@ -172,6 +186,7 @@ span {
     margin-top: 5px;
     margin-bottom: 5px;
     padding-left: 20px;
+    margin-right: 20px;
 }
 .c-input {
     padding: 4px;

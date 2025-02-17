@@ -11,31 +11,70 @@
 </head>
 
 <body>
-    <a href="/"><h1 style="text-align: left; padding: 20px;">Return Home</h1></a>
+    <a href="/"><h3 style="text-align: left; padding: 20px;">Return Home</h3></a>
     <h1 style="text-align: center;" class="upperboldtext">Ex Libris</h1>
-    <h5 style="text-align: center;" class="italictext">My latest reads</h5>
-    <h6 style="text-align: center;" class="italictext">Clic on the title fo read the review</h6>
+    <p style="text-align: center; font-size: large;" class="italictext">
+        My latest reads<br>
+        <span style="font-size: medium;">Click on the title to read the review</span>
+    </p>
 
         <div class="center">
             
-            <div class="shelf">
+            <div class="shelf" id="currentlyreading">
+                <div class="book" id="currentread">
+                        <h2>Currenty Reading</h2>
+                            <img src="/assets/books/4-thisishowyoulosethetimewar.png"><br>
+                            <p> Max Gladstone, Amal El-Mohtar <br>This Is How You Lose the Time War, 2019</p>
+                    </details>
+                </div>
+                <hr /> <!-- add decorative divider -->
+            </div>
+            <div class="shelf" id="2025">
                 
-<!--                 <div class="book">
-                    <details><br>
-                        This is the review of the latest book i read.
+<!--            <div class="book" id="title">
+                    <details>
+                        <p>
+                            This is the review of the latest book i read.
+                        </p>
                         <summary>
-                            <img src=" source of book cover "><br>
-                            <p>Book Author<br>Book Tilte, year<br>3/5 starts</p>
+                            <img src="/assets/books/"><br>
+                            <p>Book Author<br>Book Tilte, year<br>★★★☆☆</p>
                         </summary>
                     </details>
                 </div> -->
 
-                <div class="book">
-                    <details><br>
-                        This is the review of the latest book i read.
+                <div class="book" id="Mort">
+                    <details>
+                        <p>
+                            A Discworld book is always like a nice blanket for me. Pratchett is so funny, and this story was so sweet; I really loved it. 
+                        </p>
                         <summary>
-                            <img src="https://i.pinimg.com/474x/0e/49/ea/0e49eaa5745428a50bef592a4ee2dff0.jpg"><br>
-                            <p>Book Author<br>Book Tilte, year<br>3/5 starts</p>
+                            <img src="/assets/books/3-mort.png"><br>
+                            <p>Terry Pratchett<br>Mort, 1987<br>★★★★★</p>
+                        </summary>
+                    </details>
+                </div>
+
+                <div class="book" id="Lapvona">
+                    <details>
+                        <p>
+                            This book was really challenging for me because the setting was very bleak, the plot sad and the characters terrible. But the writing is amazing as always, Moshfegh never disappoints.
+                        </p>
+                        <summary>
+                            <img src="/assets/books/2-lapvona.png"><br>
+                            <p>Ottessa Moshfegh<br>Lapvona, 2022<br>★★★★☆</p>
+                        </summary>
+                    </details>
+                </div>
+
+                <div class="book" id="Baptism of Fire">
+                    <details>
+                        <p>
+                            It's been a few years of me reading a Witcher book on the 2nd of January, first book fo the new year. I love it because it's the type of fantasy that's very comforting for me, and i relly like Geralt, he's one of my favourite poor little meow meows. This one was nice but a little scarce in plot, a lot of traveling in the woods. Still nice though.
+                        </p>
+                        <summary>
+                            <img src="/assets/books/1-witcherbaptismoffire.jpg"><br>
+                            <p>Andrzej Sapkowski<br>Baptism of Fire, 1996<br>★★★☆☆</p>
                         </summary>
                     </details>
                 </div>

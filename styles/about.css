@@ -28,3 +28,6 @@
     height: auto;
     align-self: flex-end;
 }
+.sizetest {
+    width: 230px;
+}
