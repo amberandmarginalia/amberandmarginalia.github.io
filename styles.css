@@ -26,6 +26,7 @@ body {
     display: flex;
     justify-content: center; /* centra sull'asse verticale */
     flex-basis: 100%; /* la sezione flex occupa il 100% del contenitore */
+    margin-bottom: 50px;
 }
 span {
     cursor: help;
@@ -39,9 +40,21 @@ main {
     display: flex;
     flex-direction: row;
 }
+.rowcenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
 .col {
     display: flex;
     flex-direction: column;
+}
+.colcenter {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
 }
 /* responsività mobile: su schermi più piccoli (max 800px di larghezza), le sidebar diventano blocchi a larghezza piena sotto il contenuto principale */
 @media only screen and (max-width: 800px) {
@@ -106,7 +119,7 @@ main {
         height: auto;
         margin-bottom: 20px;
         border: 32px solid;
-        border-image-source: url('assets/goldFrame.png');
+        border-image-source: url('/assets/goldFrame.png');
         border-image-slice: 208;
         border-image-width: 80px;
         border-image-repeat: repeat;
@@ -146,7 +159,7 @@ main {
     padding: 10px;
     flex-basis: 20%;
     margin-left: 10px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     width: 100%;
     box-sizing: border-box;
 }

@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+.wall {
+    display: block;
+    border: solid 0.5px transparent;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.card {
+    border: solid 1px transparent;
+    display: inline-block;
+    vertical-align: top;
+    /* max-width: 300px; */
+    /* max-height: 300px; */
+    width: min-content;
+    height: max-content;
+    padding: 10px;
+    margin: 20px -5px;
+    /* box-sizing: border-box; */
+}
+.card p, .card figcaption, .card span {
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    max-width: 100%;
+}
+.framedImage {
+    /* border: solid 0.8px transparent; */
+    /* display: inline-block; */
+    /* max-width: 300px; */
+    height: 300px;
+    width: fit-content;
+    /* display: block; */
+    /* vertical-align: top; */
+    /* padding: 30px 20px 10px 20px; */
+    /* margin: 20px -5px; */
+    
+    background-color: #8c3f01;
+    background-clip: padding-box;
+    border: 32px solid;
+    border-image-source: url('/assets/goldFrame.png');
+    border-image-slice: 208;
+    border-image-width: 80px;
+    border-image-repeat: repeat;
+    box-sizing: border-box;
+
+/*     display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* overflow: hidden; */
+}
+
+.framedImage img {
+    max-height: 100%;
+    width: auto;
+    max-width: 600px;
+    /* display: block; */
+    object-fit: cover;
+}
+/* .framedImage:hover {
+    height: 320px;
+} */
+
+summary {
+    cursor: pointer;
+    display: inline; 
+    /* color: transparent; */
+}
+span {
+    margin-top: 30px;
+    text-align: left;
+    max-width: inherit;
+}
+details {
+  display: block
+}
+.center
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: dashed 1px transparent;
+}
+h1 {
+    font-size: 52px;
+}

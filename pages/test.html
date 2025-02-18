@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Grid</title>
+    
+    <style>
+            * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* This styling applies after the javascript */
+.boxes-con{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.boxes {
+
+  margin: 10px auto;
+  width: 100%;
+border-radius: 5px;
+  padding: 10px;
+height: 10rem;
+  background: goldenrod;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.box2 .boxes:nth-child(2n) {
+
+  width: 100%;
+height: 15rem;
+  background: yellowgreen;
+}
+
+.box1 .boxes:nth-child(odd) {
+background: darkorange;
+height: 14rem;
+  width: 100%;
+}
+.box3 .boxes:nth-child(odd) {
+background: blueviolet;
+height: 17rem;
+  width: 100%;
+}
+.sub {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1px 10px;
+}
+
+
+</style>
+</head>
+<body>
+    
+<script src="/pages/test.js">
+
+  <div class="boxes-con">
+    <div class="boxes">
+        <div>1</div>
+    </div>
+    <div class="boxes">
+        <div>2</div>
+    </div>
+    <div class="boxes">
+        <div>3</div>
+    </div>
+    <div class="boxes">
+        <div>4</div>
+    </div>
+    <div class="boxes">
+        <div>5</div>
+    </div>
+    <div class="boxes">
+        <div>6</div>
+    </div>
+    <div class="boxes">
+      <div>7</div>
+    </div>
+    <div class="boxes">
+      <div>8</div>
+    </div>
+    <div class="boxes">
+      <div>9</div>
+    </div>
+    <div class="boxes">
+        <div>10</div>
+    </div>
+    <div class="boxes">
+        <div>11</div>
+    </div>
+    <div class="boxes">
+        <div>12</div>
+    </div>
+    <div class="boxes">
+        <div>13</div>
+    </div>
+    <div class="boxes">
+        <div>14</div>
+    </div>
+    <div class="boxes">
+<       div>15</div>
+    </div>
+    <div class="boxes">
+      <div>16</div>
+    </div>
+    <div class="boxes">
+      <div>17</div>
+    </div>
+    <div class="boxes">
+      <div>18</div>
+    </div>
+  </div>
+</script>
+  
+</body>
+</html>
