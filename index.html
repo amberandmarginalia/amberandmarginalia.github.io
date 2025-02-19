@@ -5,6 +5,7 @@
   <meta charset="UTF-8"> <!-- codifica dei caratteri -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- garantisce che il sito sia responsive (si adatta a dimensioni diverse di schermo)--> 
   <title>Amber & Marginalia</title>
+  <script src="/js/sparkles.js" defer></script>
   <link rel="stylesheet" href="/fonts.css">
   <link rel="stylesheet" href="/styles.css">
 </head>
@@ -24,37 +25,36 @@
       <aside id="leftSidebar"> 
         <!-- immagine della settimana  DA AGGIUNGERE -->
         <a href="/pages/imagegallery.html">
-        <div id="featuredImage">
-          <a href="/pages/imagegallery.html">
-            <span title="This week's featured image is by archbudzar.tumblr.com">
-                <img src="/assets/imagesoftheweek/1-griefneverending.png" alt="This is this week's featured image.">
-            </span>
-          </a>
+          <div id="featuredImage">
+            <a href="/pages/imagegallery.html">
+              <span title="This week's featured image is by archbudzar.tumblr.com">
+                  <img src="/assets/imagesoftheweek/1-griefneverending.png" alt="This is this week's featured image.">
+              </span>
+            </a>
           </div>
         </a>
 
         <div class="scrollVertical">
-            <div id="leftBox"> 
+          <div id="leftBox"> 
 
-              <div id="statusBar">
-                <span class="upperboldtext" style="font-size: x-large;">Status</span>: busy
-                <p>This is easier but way more time consuming than i thought</p>
-              </div>
-              <hr>
-              <div id="souvenir">
-                <h2 class="upperboldtext">Grab a souvenir!</h3>
-                  <div id="buttons" class="row" style="justify-content: center; gap: 10px;">
-                    <a href="/">
-                      <img src="/assets/buttons/button.gif" alt="animated 88x31 button" style="width: 88px; align-self: center; margin-bottom: 10px;">
-                    </a>
-                    <a href="/">
-                      <img src="/assets/buttons/buttonStatic.png" alt="static 88x31 button" style="width: 88px; height: 31px;">
-                    </a>
-                </div>
-                <p style="font-size: x-small;">Please don't hyperlink</p>
-              </div>
-              
+            <div id="statusBar">
+              <span class="upperboldtext" style="font-size: x-large;">Status</span>: busy
+              <p>This is easier but way more time consuming than i thought</p>
             </div>
+            <hr>
+            <div id="souvenir">
+              <h2 class="upperboldtext">Grab a souvenir!</h3>
+                <div id="buttons" class="row" style="justify-content: center; gap: 10px;">
+                  <a href="/">
+                    <img src="/assets/buttons/amberandmarginalia.gif" alt="animated 88x31 button" style="width: 88px; align-self: center; margin-bottom: 10px;">
+                  </a>
+                  <a href="/">
+                    <img src="/assets/buttons/amberandmarginaliaStatic.png" alt="static 88x31 button" style="width: 88px; height: 31px;">
+                  </a>
+                </div>
+              <p style="font-size: x-small;">Please don't hyperlink</p>
+            </div>
+          </div>
         </div>
 
       </aside>
@@ -64,14 +64,14 @@
         <h1 class="upperboldtext" style="text-align: center;">Welcome!<br>(Site under construction)</h1>
         <p class="italictext" style="text-align: center;">Hello traveler, you've entered the lands of Amber, welcome to my little corner of the internet!<br>
         This website is sort of a mix between a scrapbook and a portfolio of projects I've started (not necessarily ended though). This place is a love letter to the personal web, a castle of golden memories. A museum dedicated to preserving, the little things left in the margins.</p>
-        <p>I update semi-regularly so if you enjoy these lands, please come back.</p>
+        <p><span style="font-size: larger;">This web is still being woven</span>, please don't be surprised if it changes from time to time</p>
         <p style="font-size: large;"><span class="upperboldtext">Warning:</span> there are hidden wonders around!</p>
         <p>Almost everything in here is clickable, there are many secrets to be found!</p>
 
         <div id="todo">
           <strong class="upperboldtext">To-do:</strong><br>
           <ul>
-            <li>imagegallery.html + css</li>
+            <li style="text-decoration: line-through;">imagegallery.html + css</li>
             <li>links out + buttons</li>
             <li>credits and resources</li>
             <li style="text-decoration: line-through;">finish guestbook.css</li>
@@ -83,6 +83,10 @@
             <li style="text-decoration: line-through;">add custom 404 page</li>
             <li style="text-decoration: line-through;">finish css on books page</li>
             <li>draw some more assets (dividers/little guys)</li>
+            <li>change all titles</li>
+            <li style="text-decoration: line-through;">add sparkle animation to all pages</li>
+            <li>favicon</li>
+            <li>custom cursor (default, pointer, help)</li>
           </ul>
         </div>
 
@@ -96,9 +100,9 @@
           <div id="navMenu" style="padding: 20px; padding-bottom: 0px; letter-spacing: 1px;" class="bolditalictext">
             <nav>
               <a href="/pages/about.html">About</a><br>
-              <a href="/pages/books">Latest Reads</a><br>
-              <a href="/pages/linksOut">Links Out</a><br>
-              <a href="/pages/resources">Credits and Resources</a><br>
+              <a href="/pages/books.html">Latest Reads</a><br>
+              <a href="/pages/linksout.html">Links Out</a><br>
+              <a href="/pages/resources.html">Credits and Resources</a><br>
             </nav>
           </div>
 
@@ -110,7 +114,8 @@
             <h2 class="uppertext">Updates</h2>
             <div class="updatesContent">
               <!-- <strong>date:</strong><br>updatetext<br><br> -->
-              <strong>19th feb 2025:</strong><br>Created Image Gallery<br><br>
+              <strong>20th feb 2025:</strong><br>Created Links Out and added sparkles<br><br>
+              <strong>19th feb 2025:</strong><br>Created Featured Image and Photo Gallery<br><br>
               <strong>18th feb 2025:</strong><br>Filled book review page, created custom 404 error<br><br>
               <strong>11th feb 2025:</strong><br>Cleaned main css file and created about me page<br> Drew up button and animated button<br><br>
               <strong>10th feb 2025:</strong><br>Set up official color scheme and drew scrolls for sidebars<br><br>

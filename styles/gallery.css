@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+.wall {
+    display: block;
+    border: solid 0.5px transparent;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 100%;
+}
+.cardeven, .cardodd {
+    border: solid 1px transparent;
+    display: inline-block;
+    vertical-align: top;
+    width: min-content;
+    height: max-content;
+    margin: 10px;
+    background-color: whitesmoke;
+    padding: 20px 20px 20px 20px;
+}
+.cardeven:hover {transform: rotate(-3deg);}
+.cardodd:hover {transform: rotate(+3deg);}
+
+.cardeven p, .cardeven figcaption, .cardeven span, .cardodd p, .cardodd figcaption, .cardodd span {
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+    padding: 0 10px;
+    max-width: 100%;
+    color: var(--dark-colour);
+}
+.pic {
+    height: 300px;
+    width: fit-content;
+}
+
+.pic img {
+    max-height: 100%;
+    width: auto;
+    max-width: 600px;
+}
+
+
+summary {
+    cursor: pointer;
+    display: inline; 
+}
+span {
+    margin-top: 30px;
+    text-align: left;
+    max-width: inherit;
+}
+details {
+  display: block
+}
+.center
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 52px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .cardeven, .cardodd {
+        max-width: 100%;
+        width: fit-content;
+    }
+    .pic {
+        max-width: 100%;
+        height: auto;
+    }
+    .pic img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .center {
+        width: 90%;
+    }
+}
