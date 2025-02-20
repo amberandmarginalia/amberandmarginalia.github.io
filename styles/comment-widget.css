@@ -1,7 +1,7 @@
 :root {
     --dark-colour: #2d1e2d;
     --light-colour: #3c3544;
-    --lightlilac: rgb(195, 182, 210);
+    --lightest: rgb(195, 182, 210);
 }
 body {
     font-family: 'IM Fell';
@@ -121,11 +121,6 @@ span {
     height: 100%;
     padding: 15px;
     overflow: auto;
-    background-image: url('bow-bg.gif'); /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
-    background-attachment: fixed;
- /*    font-family: 'Trebuchet MS';
-    font-size: 14px;
-    color: #211F24; */
 }
 
 #c_widget button, #c_widget input[type=submit] {
@@ -157,7 +152,6 @@ span {
 /* Input section */
 #c_inputDiv {
     padding: 10px;
-    /* text-transform: lowercase; */
     background-color: var(--dark-colour);
     padding:  23px 10px 23px 10px;
     background-image: url("/assets/scrollBackground.png");
@@ -203,7 +197,7 @@ span {
     resize: none;
 }
 #c_submitButton {display: block;}
-#c_replyingText {color: var(--lightlilac);}
+#c_replyingText {color: var(--lightest);}
 
 /* Comment section */
 .c-comment {
@@ -234,7 +228,7 @@ span {
     text-transform: lowercase;
     color: var(--light-colour); /* color of the website link */
 }
-.c-site:hover {color: var(--lightlilac);} /* website link on hhover */
+.c-site:hover {color: var(--lightest);} /* website link on hhover */
 .c-timestamp {
     float: right;
     opacity: 60%;
@@ -244,7 +238,7 @@ span {
     margin-top: 10px;
     padding: 0;
     text-align: justify;
-    color: var(--lightlilac); /* comment text color */
+    color: var(--lightest); /* comment text color */
 }
 
 /* Pagination */

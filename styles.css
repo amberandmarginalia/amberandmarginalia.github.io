@@ -1,10 +1,13 @@
+* {
+    box-sizing: border-box;
+}
 :root {
     /* queste sono variabili*/
     --header-image: url('/assets/header.png');
     --bg-image: url('/assets/mainbackground.png');
     --dark-colour: #2d1e2d;
     --light-colour: #3c3544;
-    --lightlilac: rgb(195, 182, 210);
+    --lightest: rgb(195, 182, 210);
 }
 /* font, colore di sfondo e immagine */
 body {
@@ -29,7 +32,7 @@ body {
     flex-basis: 100%; /* la sezione flex occupa il 100% del contenitore */
     margin-bottom: 50px;
 }
-span {
+span[title] {
     cursor: help;
 }
 main {
@@ -46,6 +49,7 @@ main {
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
 }
 .col {
     display: flex;
@@ -56,6 +60,19 @@ main {
     flex-direction: column;
     align-content: center;
     text-align: center;
+    margin: 0 auto;
+}
+.darkbox {
+    background-color: var(--dark-colour);
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+}
+.lightbox {
+    background-color: var(--light-colour);
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
 }
 /* responsività mobile: su schermi più piccoli (max 800px di larghezza), le sidebar diventano blocchi a larghezza piena sotto il contenuto principale */
 @media only screen and (max-width: 800px) {
@@ -153,7 +170,19 @@ main {
     border-image-width: 35px;
     border-image-outset: 10px;
     border-image-repeat: stretch;
-} .scrollVertical > * {padding: 10px}
+} .scrollVertical > * {margin: 10px}
+
+.scrollHorizontal {
+    padding: 10px 23px 10px 23px;
+    background-image: url("/assets/scrollBackground.png");
+    background-clip: content-box;
+    border: 0px solid transparent;
+    border-image-source: url("/assets/scrollBorderHorizontal.png");
+    border-image-slice: 175 210 175 210;
+    border-image-width: 35px;
+    border-image-outset: 10px;
+    border-image-repeat: stretch;
+} .scrollHorizontal > * {margin: 10px}
 
 #rightSidebar {
     flex-grow: 1;

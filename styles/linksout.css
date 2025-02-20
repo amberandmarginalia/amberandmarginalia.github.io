@@ -9,7 +9,7 @@
     margin: 0 auto;
 }
 .buttonwall a img:hover {
-    box-shadow: 0px 0px 20px 1px var(--lightlilac);
+    box-shadow: 0px 0px 20px 1px var(--lightest);
 }
-a:link{color: var(--lightlilac);}
-a:visited{color: var(--lightlilac);}
+a:link{color: var(--lightest);}
+a:visited{color: var(--lightest);}

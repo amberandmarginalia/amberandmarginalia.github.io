@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- garantisce che il sito sia responsive (si adatta a dimensioni diverse di schermo)--> 
   <title>Amber & Marginalia</title>
   <script src="/js/sparkles.js" defer></script>
+  <script src="/js/fireworks.js" defer></script>
   <link rel="stylesheet" href="/fonts.css">
   <link rel="stylesheet" href="/styles.css">
 </head>
@@ -34,8 +35,7 @@
           </div>
         </a>
 
-        <div class="scrollVertical">
-          <div id="leftBox"> 
+        <div class="scrollVertical" id="leftBox">
 
             <div id="statusBar">
               <span class="upperboldtext" style="font-size: x-large;">Status</span>: busy
@@ -54,7 +54,12 @@
                 </div>
               <p style="font-size: x-small;">Please don't hyperlink</p>
             </div>
-          </div>
+            <hr>
+            <div id="playlist">
+              <h3>Playlist of the month:</h3>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2P8n5sn3NgWJIae9wHt4d5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
         </div>
 
       </aside>
@@ -101,6 +106,7 @@
             <nav>
               <a href="/pages/about.html">About</a><br>
               <a href="/pages/books.html">Latest Reads</a><br>
+              <a href="/pages/foryou.html">For You</a><br>
               <a href="/pages/linksout.html">Links Out</a><br>
               <a href="/pages/resources.html">Credits and Resources</a><br>
             </nav>

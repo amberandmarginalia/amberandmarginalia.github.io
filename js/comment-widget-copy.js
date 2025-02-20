@@ -35,8 +35,8 @@ const s_dstEnd = ['November', 'Sunday', 1, 2]; // Example shown is the first Sun
 
 // Misc - Other random settings
 const s_commentsPerPage = 5; // The max amount of comments that can be displayed on one page, any number >= 1 (Replies not counted)
-const s_maxLength = 2000; // The max character length of a comment
-const s_maxLengthName = 24; // The max character length of a name
+const s_maxLength = 500; // The max character length of a comment
+const s_maxLengthName = 16; // The max character length of a name
 const s_commentsOpen = true; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)
 const s_collapsedReplies = true; // True for collapsed replies with a button, false for replies to display automatically
 const s_longTimestamp = false; // True for a date + time, false for just the date
@@ -44,27 +44,27 @@ let s_includeUrlParameters = false; // Makes new comment sections on pages with 
 const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make the index page and page 1 of your webcomic have the same comment section
 
 // Word filter - Censor profanity, etc
-const s_wordFilterOn = true; // True for on, false for off
-const s_filterReplacement = 'removed-word'; // Change what filtered words are censored with (**** is the default)
+const s_wordFilterOn = false; // True for on, false for off
+const s_filterReplacement = '****'; // Change what filtered words are censored with (**** is the default)
 const s_filteredWords = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
-    'retard', 'nigger', 'dumbledore', 'glap'
+    'heck', 'dang'
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
-const s_widgetTitle = 'Leave a comment!';
-const s_nameFieldLabel = 'name';
-const s_websiteFieldLabel = 'website (optional)';
-const s_textFieldLabel = 'message';
-const s_submitButtonLabel = 'submit';
-const s_loadingText = 'loading comments...';
-const s_noCommentsText = 'no comments yet!';
-const s_closedCommentsText = 'Comments are closed temporarily.';
-const s_websiteText = 'website'; // The links to websites left by users on their comments
-const s_replyButtonText = 'reply'; // The button for replying to someone
-const s_replyingText = 'replying to'; // The text that displays while the user is typing a reply
-const s_expandRepliesText = 'show replies';
-const s_leftButtonText = 'newer messages';
-const s_rightButtonText = 'older messages';
+const s_widgetTitle = 'Sign my guestbook!';
+const s_nameFieldLabel = 'Signed,';
+const s_websiteFieldLabel = 'Hailing from';
+const s_textFieldLabel = '';
+const s_submitButtonLabel = 'Submit';
+const s_loadingText = 'Loading comments...';
+const s_noCommentsText = 'No comments yet!';
+const s_closedCommentsText = 'Comments are closed temporarily!';
+const s_websiteText = 'Website'; // The links to websites left by users on their comments
+const s_replyButtonText = 'Reply'; // The button for replying to someone
+const s_replyingText = 'Replying to'; // The text that displays while the user is typing a reply
+const s_expandRepliesText = 'Show Replies';
+const s_leftButtonText = '<<';
+const s_rightButtonText = '>>';
 
 /*
     DO NOT edit below this point unless you are confident you know what you're doing!
@@ -91,20 +91,21 @@ const v_mainHtml = `
 `;
 const v_formHtml = `
     <h2 id="c_widgetTitle">${s_widgetTitle}</h2>
-
+    
+    <div id="c_textWrapper" class="c-inputWrapper">
+        <label class="c-label c-textLabel" for="entry.${s_textId}">${s_textFieldLabel}</label>
+        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" rows="4" cols="50"  maxlength="${s_maxLength}" required placeholder="your message"></textarea>
+    </div>
+    
+    /* SOMETHING WRONG, DOES NOT TAKE THE NAME */
     <div id="c_nameWrapper" class="c-inputWrapper">
         <label class="c-label c-nameLabel" for="entry.${s_nameId}">${s_nameFieldLabel}</label>
-        <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" required>
+        <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" required placeholder=" your name">
     </div>
 
     <div id="c_websiteWrapper" class="c-inputWrapper">
         <label class="c-label c-websiteLabel" for="entry.${s_websiteId}">${s_websiteFieldLabel}</label>
-        <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" type="url" pattern="https://.*">
-    </div>
-
-    <div id="c_textWrapper" class="c-inputWrapper">
-        <label class="c-label c-textLabel" for="entry.${s_textId}">${s_textFieldLabel}</label>
-        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" rows="4" cols="50"  maxlength="${s_maxLength}" required></textarea>
+        <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" type="url" pattern="https://.*" placeholder="link (optional)">
     </div>
 
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
@@ -372,6 +373,7 @@ function createComment(data) {
     let name = document.createElement('h3');
     let filteredName = data.Name;
     if (s_wordFilterOn) {filteredName = filteredName.replace(v_filteredWords, s_filterReplacement)}
+    // if (data.Website) {filteredName = filteredName + '     from'} 
     name.innerText = filteredName;
     name.className = 'c-name';
     comment.appendChild(name);
@@ -386,7 +388,10 @@ function createComment(data) {
     if (data.Website) {
         let site = document.createElement('a');
         let url = new URL(data.Website);
-        site.innerText = filteredName + "'s site";
+        if (url.pathname != '/') {
+            site.innerText = url.host + url.pathname;
+        } else {site.innerText = url.host}
+        // site.innerText = s_websiteText;
         site.href = data.Website;
         site.className = 'c-site';
         comment.appendChild(site);

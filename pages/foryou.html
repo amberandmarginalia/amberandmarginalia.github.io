@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You | Amber & Marginalia</title>
+  <script src="/js/sparkles.js" defer></script>
+  <script src="/js/fireworks.js" defer></script>
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles/foryou.css">
+</head>
+
+<body>
+    <div id="container" class="lightbox">
+    
+        <h1>Graphics</h1>
+
+        <table id="graphicstable">
+            <thead>
+                <tr>
+                    <th scope="col">Source</th>
+                    <th scope="col">Caption</th>
+                    <th scope="col">Code bits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><img src="/assets/goldFrame.png"></th>
+                    <td>Gold Frame: works great as a border image for a picture</td>
+                    <td>
+                        <div class="codebox">
+                            <code>
+                                .framedImage {
+                                    height: 300px;
+                                    width: fit-content;
+                                    background-color: #8c3f01;
+                                    background-clip: padding-box;
+                                    border: 32px solid;
+                                    border-image-source: url('source/goldFrame.png');
+                                    border-image-slice: 208;
+                                    border-image-width: 80px;
+                                    border-image-repeat: repeat;
+                                    box-sizing: border-box;
+                                }
+                                
+                                .framedImage img {
+                                    max-height: 100%;
+                                    width: auto;
+                                    max-width: 600px;
+                                    object-fit: cover;
+                                }
+                            </code>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="/assets/scrollBorder.png"></th>
+                    <td>Vertical Scroll: works as a border image.</td>
+                </tr><tr>
+                    <th scope="row"><img src="/assets/scrollBorderHorizontal.png"></th>
+                    <td>Horizontal Scroll: works as a border image.</td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="/assets/scrollBackground.png"></th>
+                    <td>Scroll Background: seamless background for the scrolls</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
