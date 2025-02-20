@@ -8,4 +8,15 @@ const s_pageId = '847632911'
 const s_replyId = '173896026'
 const s_sheetId = '1JiX-u9PuspLRsNKPKzh6mlAYgTLaG-OzOtWDeGp_Mo4'
 
-https://docs.google.com/spreadsheets/d/1JiX-u9PuspLRsNKPKzh6mlAYgTLaG-OzOtWDeGp_Mo4/edit?resourcekey=&gid=880828187#gid=880828187
+https://docs.google.com/forms/d/e/1FAIpQLScI2j0zP_JtUSlpw5Qkca-mMObHFdqxdflxLysbInsbWz-DjA/viewform?usp=pp_url&entry.1131630508=Name&entry.835796008=Website&entry.449508173=Text&entry.1542356078=Page&entry.268349215=Reply
+
+const s_formId = '1FAIpQLScI2j0zP_JtUSlpw5Qkca-mMObHFdqxdflxLysbInsbWz-DjA'
+const s_nameId = '1131630508'
+const s_websiteId = '835796008'
+const s_textId = '449508173'
+const s_pageId = '1542356078'
+const s_replyId = '268349215'
+const s_sheetId = '1eVP3VGQiQ6LY6_gRbt1M4aja3uIOc7ZEBPGG-_miBc4'
+
+
+https://docs.google.com/spreadsheets/d/1eVP3VGQiQ6LY6_gRbt1M4aja3uIOc7ZEBPGG-_miBc4/edit?resourcekey=&gid=1120936611#gid=1120936611
