@@ -95,6 +95,12 @@
           </ul>
         </div>
 
+        <a href="/pages/guestbook.html">
+          <div id="guestbook">
+            <img src="/assets/guys/closedGuestbook.png" data-hover-image="/assets/guys/openGuestbook.png">
+          </div>
+        </a>
+
       </aside>
 
       <aside id="rightSidebar">
@@ -115,21 +121,9 @@
           <img src="/assets/pixels/rats.png" style="display: flex; margin: 0 auto; align-items: center;">
           <!--horizontal line divider -->
           <a href="/pages/guestbook.html" class="bolditalictext">Please sign my Guestbook!</a>
+          
           <!-- UPDATES TAB -->
-          <div class="updatesContainer" style="text-align: center;">
-            <h2 class="uppertext">Updates</h2>
-            <div class="updatesContent">
-              <!-- <strong>date:</strong><br>updatetext<br><br> -->
-              <strong>20th feb 2025:</strong><br>Created Links Out, Resources, For You and added sparkles<br><br>
-              <strong>19th feb 2025:</strong><br>Created Featured Image and Photo Gallery<br><br>
-              <strong>18th feb 2025:</strong><br>Filled book review page, created custom 404 error<br><br>
-              <strong>11th feb 2025:</strong><br>Cleaned main css file and created about me page<br> Drew up button and animated button<br><br>
-              <strong>10th feb 2025:</strong><br>Set up official color scheme and drew scrolls for sidebars<br><br>
-              <stong>9th feb 2025:</stong><br>Added guestbook and books page<br><br>
-              <strong>8th feb 2025:</strong><br>Created first assets on krita<br><br>
-              <strong>6th feb 2025:</strong><br>Github repo created<br>
-            </div>
-          </div>
+          <iframe src="/pages/updates.html" style="height: 270px; width: 100%; border: none;" id="updates"></iframe>
         </div>
       </aside>
     </div>
@@ -142,5 +136,21 @@
   </div>
 </body>
 
+<style>
+#guestbook {
+  display: inline-block;
+  margin-left: 20px;
+}
+#guestbook img {
+  height: 200px;
+  transition: opacity 0.9s ease;
+  transform: rotate(-3deg);
+}
+#guestbook:hover img {
+  content: url("/assets/guys/openGuestbook.png");
+  transform: rotate(+3deg);
+  height: 220px;
+}
+</style>
 
 </html>

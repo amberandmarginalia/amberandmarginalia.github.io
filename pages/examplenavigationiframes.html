@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Navigation Example</title>
+    <style>
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+        nav {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/pages/page1.html" target="contentFrame">Page 1</a> |
+        <a href="/pages/page2.html" target="contentFrame">Page 2</a> |
+        <a href="/pages/page3.html" target="contentFrame">Page 3</a>
+    </nav>
+
+    <iframe name="contentFrame" src="/pages/page1.html"></iframe>
+</body>
+</html>

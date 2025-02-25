@@ -1,7 +1,7 @@
 https://docs.google.com/forms/d/e/1FAIpQLSeAdkKyAmGfZnPy4Z1BkI3-nsyf5uAtgGxZG3-NPyL08yYkLQ/viewform?usp=pp_url&entry.160143985=Name&entry.1564858311=Website&entry.695398522=Text&entry.847632911=Page&entry.173896026=Reply
 
 const s_formId = '1FAIpQLSeAdkKyAmGfZnPy4Z1BkI3-nsyf5uAtgGxZG3-NPyL08yYkLQ'
-const s_nameId = '16014398'
+const s_nameId = '160143985'
 const s_websiteId = '1564858311'
 const s_textId = '695398522'
 const s_pageId = '847632911'
