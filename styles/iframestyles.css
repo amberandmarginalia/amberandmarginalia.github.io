@@ -1,0 +1,35 @@
+* {
+    font-family: 'IM Fell';
+    font-style: regular;
+    color: #faebd7;
+    margin: 0;
+}
+:root {
+    /* queste sono variabili*/
+    --header-image: url('/assets/header.png');
+    --bg-image: url('/assets/mainbackground.png');
+    --dark-colour: #2d1e2d;
+    --light-colour: #3c3544;
+    --lightest: rgb(195, 182, 210);
+}
+body {
+    overflow-y: hidden;
+}
+a:link {color:bisque; text-decoration: none;}
+a:visited {color: bisque; text-decoration: none;}
+a:hover {text-decoration: underline;}
+h1 {text-align: center;}
+.container {
+    width: auto;
+    background-color: var(--light-colour);
+    border: 2px solid #444;
+    padding: 0px 15px 5px 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content { 
+    height: fized amount of px; 
+    overflow-y: auto; /* Show scrollbar when content overflows */
+    padding-right: 10px; /* Prevent text from touching the scrollbar */
+    font-size: x px;
+}

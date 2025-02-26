@@ -8,42 +8,20 @@
   <script src="/js/sparkles.js" defer></script>
   <script src="/js/fireworks.js" defer></script>
   <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/styles/iframestyles.css">
 </head>
 
 <style>
-    * {
-        box-sizing: border-box;
-        font-family: 'IM Fell';
-        font-style: regular;
-        color: #faebd7;
-        margin: 0;
-    }
-    :root {
-        /* queste sono variabili*/
-        --header-image: url('/assets/header.png');
-        --bg-image: url('/assets/mainbackground.png');
-        --dark-colour: #2d1e2d;
-        --light-colour: #3c3544;
-        --lightest: rgb(195, 182, 210);
-    }
-    body {
-        overflow-y: hidden;
-    }
-    a:link {color:bisque; text-decoration: none;}
-    a:visited {color: bisque; text-decoration: none;}
-    a:hover {text-decoration: underline;}
-    h1 {text-align: center;}
-    .updatesContainer {
+    .container {
         width: auto;
-        /* height: auto; */
         background-color: var(--light-colour);
         border: 2px solid #444;
-        padding: 0px 15px 15px 15px;
+        padding: 0px 15px 5px 15px;
         margin: 20px 20px 0px 5px;
         margin-left: 5px;
         text-align: center;
     }
-    .updatesContent { /* CHECK HEIGHT PROPERTY AFTER INDEX IS DONE */
+    .content { /* CHECK HEIGHT PROPERTY AFTER INDEX IS DONE */
         height: 200px; 
         overflow-y: auto; /* Show scrollbar when content overflows */
         padding-right: 10px; /* Prevent text from touching the scrollbar */
@@ -52,10 +30,11 @@
 </style>
 
 <body>
-    <div class="updatesContainer">
+    <div class="container">
         <h2 class="uppertext">Updates</h2>
-        <div class="updatesContent">
+        <div class="content">
           <!-- <strong>date:</strong><br>updatetext<br><br> -->
+          <strong>26th feb 2025:</strong><br>Created iframes and iframe styles, made guestbook make pages sounds but mostly fucked around.<br><br>
           <strong>25th feb 2025:</strong><br>Updated <a href="/pages/books.html">books</a> page, started the playlist gallery, created updaes iframe and drew a couple more assets.<br><br>
           <strong>20th feb 2025:</strong><br>Created Links Out, Resources, For You and added sparkles<br><br>
           <strong>19th feb 2025:</strong><br>Created Featured Image and Photo Gallery<br><br>
@@ -65,6 +44,7 @@
           <stong>9th feb 2025:</stong><br>Added guestbook and books page<br><br>
           <strong>8th feb 2025:</strong><br>Created first assets on krita<br><br>
           <strong>6th feb 2025:</strong><br>Github repo created<br>
+          <br>
         </div>
     </div>
 </body>

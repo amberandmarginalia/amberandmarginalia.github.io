@@ -71,22 +71,23 @@
         Z = fireworks_stars[i].style;
         fireworks_Xpos[i] += fireworks_dX[i];
         fireworks_Ypos[i] += (fireworks_dY[i] += 1.25 / fireworks_intensity[N]);
+        // Constrain the fireworks within the viewport
         if (fireworks_Xpos[i] >= fireworks_swide || fireworks_Xpos[i] < 0 || fireworks_Ypos[i] >= fireworks_shigh + fireworks_sdown || fireworks_Ypos[i] < 0) {
           fireworks_decay[i] = 1;
         } else {
-          Z.left = fireworks_Xpos[i] + 'px';
-          Z.top = fireworks_Ypos[i] + 'px';
+          Z.left = fireworks_Xpos[i] + "px";
+          Z.top = fireworks_Ypos[i] + "px";
         }
-        if (fireworks_decay[i] == 15) Z.fontSize = '7px';
-        else if (fireworks_decay[i] == 7) Z.fontSize = '2px';
-        else if (fireworks_decay[i] == 1) Z.visibility = 'hidden';
+        if (fireworks_decay[i] == 15) Z.fontSize = "7px";
+        else if (fireworks_decay[i] == 7) Z.fontSize = "2px";
+        else if (fireworks_decay[i] == 1) Z.visibility = "hidden";
         fireworks_decay[i]--;
       } else {
         A++;
       }
     }
     if (A != fireworks_sparks) {
-      fireworks_timers[N] = setTimeout('fireworks_bang(' + N + ')', fireworks_speed);
+      fireworks_timers[N] = setTimeout("fireworks_bang(" + N + ")", fireworks_speed);
     }
   }
   

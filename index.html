@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"> <!-- codifica dei caratteri -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- garantisce che il sito sia responsive (si adatta a dimensioni diverse di schermo)--> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amber & Marginalia</title>
   <script src="/js/sparkles.js" defer></script>
   <script src="/js/fireworks.js" defer></script>
   <link rel="stylesheet" href="/fonts.css">
   <link rel="stylesheet" href="/styles.css">
 </head>
+
+
 
 <body>
 
@@ -74,32 +76,21 @@
         <p>Almost everything in here is clickable, there are many secrets to be found!</p>
 
         <div id="todo">
-          <strong class="upperboldtext">To-do:</strong><br>
-          <ul>
-            <li style="text-decoration: line-through;">imagegallery.html + css</li>
-            <li>links out + buttons</li>
-            <li>credits and resources</li>
-            <li style="text-decoration: line-through;">finish guestbook.css</li>
-            <li style="text-decoration: line-through;">add grab a souvenir station</li>
-            <li style="text-decoration: line-through;">add status block</li>
-            <li style="text-decoration: line-through;">write main page (add featured page)</li>
-            <li style="text-decoration: line-through;"> create about page</li>
-            <li style="text-decoration: line-through;"> about.css</li>
-            <li style="text-decoration: line-through;">add custom 404 page</li>
-            <li style="text-decoration: line-through;">finish css on books page</li>
-            <li>draw some more assets (dividers/little guys)</li>
-            <li>change all titles</li>
-            <li style="text-decoration: line-through;">add sparkle animation to all pages</li>
-            <li>favicon</li>
-            <li>custom cursor (default, pointer, help)</li>
-          </ul>
+          
         </div>
 
-        <a href="/pages/guestbook.html">
+        <div class="row" style="justify-content: space-between; height: 330px;"> <!-- height is the height of the biggest thing on hover, might be changed -->
+
           <div id="guestbook">
-            <img src="/assets/guys/closedGuestbook.png" data-hover-image="/assets/guys/openGuestbook.png">
+            <img src="/assets/guys/closedGuestbook.png"
+              data-hover-image="/assets/guys/openGuestbook.png"
+              data-sound="/assets/audio/pagesound.mp3"
+              data-link="/pages/guestbook.html"> 
           </div>
-        </a>
+
+          <iframe src="/pages/todo.html" frameborder="0"></iframe>
+          
+        </div>
 
       </aside>
 
@@ -118,12 +109,21 @@
             </nav>
           </div>
 
-          <img src="/assets/pixels/rats.png" style="display: flex; margin: 0 auto; align-items: center;">
+          <img src="/assets/border1.png" style="display: flex; margin: 0 auto; align-items: center; max-width: 90%;">
           <!--horizontal line divider -->
           <a href="/pages/guestbook.html" class="bolditalictext">Please sign my Guestbook!</a>
           
           <!-- UPDATES TAB -->
           <iframe src="/pages/updates.html" style="height: 270px; width: 100%; border: none;" id="updates"></iframe>
+
+          <style> #playlists:hover img{height: 110px !important;} #playlists {display: flex;; justify-content: center;}</style>
+          <div id="playlists">
+            <img src="/assets/guys/readingRabbit.png"
+            style="height: 100px; cursor: pointer;"
+            data-sound="/assets/audio/pagesound.mp3"
+            data-link="/pages/books.html">
+          </div>
+
         </div>
       </aside>
     </div>
@@ -134,23 +134,52 @@
       </span>
     </footer>
   </div>
+
+  <audio id="pagesound" src="/assets/audio/pagesound.mp3" type="audio/mp3"></audio>
+
 </body>
 
 <style>
-#guestbook {
-  display: inline-block;
-  margin-left: 20px;
-}
-#guestbook img {
-  height: 200px;
-  transition: opacity 0.9s ease;
-  transform: rotate(-3deg);
-}
-#guestbook:hover img {
-  content: url("/assets/guys/openGuestbook.png");
-  transform: rotate(+3deg);
-  height: 220px;
-}
+  #guestbook {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  #guestbook img {
+    height: 200px;
+    transition: opacity 0.9s ease;
+    transform: rotate(-3deg);
+  }
+  #guestbook:hover img {
+    content: url("/assets/guys/openGuestbook.png");
+    cursor: pointer;
+    transform: rotate(+5deg);
+    height: 220px;
+  }
 </style>
+
+<script> /* MAKES SOUND ON IMAGE CLICK */
+  const pagesound = document.getElementById('pagesound');
+
+  const guestbook = document.querySelector('#guestbook');
+  const book = guestbook.querySelector('img');
+  const guestlink = book.dataset.link;
+  guestbook.addEventListener('click', () => {
+      pagesound.play(); // Play sound on click
+      pagesound.addEventListener('ended', () => {
+        window.location.href = guestlink; // Navigate to the link
+      })
+  });
+
+  const playlist = document.getElementById('playlists');
+  const readrab = playlist.querySelector('img');
+  const playlistlink = readrab.dataset.link;
+  playlist.addEventListener('click', () => {
+    pagesound.play();
+    pagesound.addEventListener('ended', () => {
+      window.location.href = playlistlink;
+    })
+  })
+
+</script>
 
 </html>

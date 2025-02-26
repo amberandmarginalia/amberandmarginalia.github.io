@@ -73,51 +73,49 @@ function sparkle() {
 }
 
 function update_star(i) {
-  if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+  if (--starv[i] == 25) star[i].style.clip = "rect(1px, 4px, 4px, 1px)";
   if (starv[i]) {
-    stary[i]+=1+Math.random()*3;
-    starx[i]+=(i%5-2)/5;
-    if (stary[i]<shigh+sdown) {
-      star[i].style.top=stary[i]+"px";
-      star[i].style.left=starx[i]+"px";
-    }
-    else {
-      star[i].style.visibility="hidden";
-      starv[i]=0;
+    stary[i] += 1 + Math.random() * 3;
+    starx[i] += (i % 5 - 2) / 5;
+    // Constrain the star within the viewport
+    if (stary[i] < shigh + sdown && starx[i] < swide + sleft && starx[i] >= 0 && stary[i] >= 0) {
+      star[i].style.top = stary[i] + "px";
+      star[i].style.left = starx[i] + "px";
+    } else {
+      star[i].style.visibility = "hidden";
+      starv[i] = 0;
       return;
     }
-  }
-  else {
-    tinyv[i]=50;
-    tiny[i].style.top=(tinyy[i]=stary[i])+"px";
-    tiny[i].style.left=(tinyx[i]=starx[i])+"px";
-    tiny[i].style.width="2px";
-    tiny[i].style.height="2px";
-    tiny[i].style.backgroundColor=star[i].childNodes[0].style.backgroundColor;
-    star[i].style.visibility="hidden";
-    tiny[i].style.visibility="visible"
+  } else {
+    tinyv[i] = 50;
+    tiny[i].style.top = (tinyy[i] = stary[i]) + "px";
+    tiny[i].style.left = (tinyx[i] = starx[i]) + "px";
+    tiny[i].style.width = "2px";
+    tiny[i].style.height = "2px";
+    tiny[i].style.backgroundColor = star[i].childNodes[0].style.backgroundColor;
+    star[i].style.visibility = "hidden";
+    tiny[i].style.visibility = "visible";
   }
 }
 
 function update_tiny(i) {
-  if (--tinyv[i]==25) {
-    tiny[i].style.width="1px";
-    tiny[i].style.height="1px";
+  if (--tinyv[i] == 25) {
+    tiny[i].style.width = "1px";
+    tiny[i].style.height = "1px";
   }
   if (tinyv[i]) {
-    tinyy[i]+=1+Math.random()*3;
-    tinyx[i]+=(i%5-2)/5;
-    if (tinyy[i]<shigh+sdown) {
-      tiny[i].style.top=tinyy[i]+"px";
-      tiny[i].style.left=tinyx[i]+"px";
-    }
-    else {
-      tiny[i].style.visibility="hidden";
-      tinyv[i]=0;
+    tinyy[i] += 1 + Math.random() * 3;
+    tinyx[i] += (i % 5 - 2) / 5;
+    // Constrain the tiny sparkle within the viewport
+    if (tinyy[i] < shigh + sdown && tinyx[i] < swide + sleft && tinyx[i] >= 0 && tinyy[i] >= 0) {
+      tiny[i].style.top = tinyy[i] + "px";
+      tiny[i].style.left = tinyx[i] + "px";
+    } else {
+      tiny[i].style.visibility = "hidden";
+      tinyv[i] = 0;
       return;
     }
-  }
-  else tiny[i].style.visibility="hidden";
+  } else tiny[i].style.visibility = "hidden";
 }
 
 document.onmousemove=mouse;
