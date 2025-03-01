@@ -20,3 +20,18 @@ const s_sheetId = '1eVP3VGQiQ6LY6_gRbt1M4aja3uIOc7ZEBPGG-_miBc4'
 
 
 https://docs.google.com/spreadsheets/d/1eVP3VGQiQ6LY6_gRbt1M4aja3uIOc7ZEBPGG-_miBc4/edit?resourcekey=&gid=1120936611#gid=1120936611
+
+
+---
+Amber's guestbook
+https://docs.google.com/forms/d/e/1FAIpQLSdMT-_nuBH-cAPJ_S6T1KqL7PDTqnQ3lDGR8USmtWXeflMeww/viewform?usp=pp_url&entry.94922203=Name&entry.1098363536=Website&entry.2016503560=Text&entry.523546950=Page&entry.1699542890=Reply
+
+const s_formId = '1FAIpQLSdMT-_nuBH-cAPJ_S6T1KqL7PDTqnQ3lDGR8USmtWXeflMeww';
+const s_nameId = '94922203';
+const s_websiteId = '1098363536';
+const s_textId = '2016503560';
+const s_pageId = '523546950';
+const s_replyId = '1699542890';
+const s_sheetId = '1Y2xg1VXLOr3uOBOp2jZf6eyReIeEFY-rwexzK1a3Ci0';
+
+https://docs.google.com/spreadsheets/d/1Y2xg1VXLOr3uOBOp2jZf6eyReIeEFY-rwexzK1a3Ci0/edit?resourcekey=&gid=1976366461#gid=1976366461

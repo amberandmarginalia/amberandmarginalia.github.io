@@ -40,8 +40,16 @@
         <div class="scrollVertical" id="leftBox">
 
             <div id="statusBar">
-              <span class="upperboldtext" style="font-size: x-large;">Status</span>: busy
-              <p>This is easier but way more time consuming than i thought</p>
+              <div class="row" style="justify-content: space-between;">
+              <p style="margin-bottom: 0px;"><span class="upperboldtext" style="font-size: x-large;">Status</span>: 
+                busy <!-- status text -->
+              </p>
+              <span style="text-align: right; color: var(--lighter-colour); margin-bottom: 0px;">
+                1 mar 2025 23:49 <!-- status date -->
+              </span></div>
+              <p style="margin-top: 5px;">
+                This is easier but way more time consuming than i thought <!-- status text -->
+              </p>
             </div>
             <hr>
             <div id="souvenir">
@@ -58,7 +66,7 @@
             </div>
             <hr>
             <div id="playlist">
-              <h3>Playlist of the month:</h3>
+              <h3><a href="pages/playlists.html" style="color: var(--lightest);">Playlist</a> of the month:</h3>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2P8n5sn3NgWJIae9wHt4d5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
 
