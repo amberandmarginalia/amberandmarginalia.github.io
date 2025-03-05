@@ -5,6 +5,8 @@
   <meta charset="UTF-8"> <!-- codifica dei caratteri -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- garantisce che il sito sia responsive (si adatta a dimensioni diverse di schermo)--> 
   <title>Book Reviews | Amber & Marginalia</title>
+  <link rel="icon" href="/assets/icons/icon32muted.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon32muted.png">
   <script src="/js/sparkles.js" defer></script>
   <script src="/js/fireworks.js" defer></script>
   <link rel="stylesheet" href="/fonts.css">
@@ -25,11 +27,12 @@
             <div class="shelf" id="currentlyreading">
                 <div class="book" id="currentread">
                     <h2>Currently Reading</h2>
-                    <img src="/assets/books/5-iwhohaveneeverknownmen.png"><br>
-                    <p>Jaqueline Harpman<br>I Who Have Never Known Men, 1995</p>
+                    <img src="/assets/books/"><br>
+                    <p>authon<br>title, year</p>
                 </div>
                 <hr /> <!-- add decorative divider -->
             </div>
+
             <div class="shelf" id="2025">
                 
 <!--            <div class="book" id="title">
@@ -43,6 +46,18 @@
                         </summary>
                     </details>
                 </div> -->
+
+                <div class="book" id="I Who have Never Known Men">
+                    <details>
+                        <p>
+                            I had no fun, felt kinda pointless, just more and more of the same
+                        </p>
+                        <summary>
+                            <img src="/assets/books/5-iwhohaveneeverknownmen.png"><br>
+                            <p>Jaqueline Harpman<br>I Who Have Never Known Men, 1995<br>★★☆☆☆</p>
+                        </summary>
+                    </details>
+                </div>
 
                 <div class="book" id="This Is How You Lose the Time War">
                     <details>
@@ -96,4 +111,16 @@
             
         </div>
 
+        <audio id="pagesound" src="/assets/audio/pagesound.mp3" type="audio/mp3"></audio>
 </body>
+
+<script>
+    const pagesound = document.getElementById('pagesound');
+    const books = document.querySelectorAll('.book');
+    books.forEach(book => {
+        book.addEventListener('click', () => {
+            pagesound.volume = 0.5; //0 no volume, 1 full volume
+            pagesound.play(); // Play sound on click
+        });
+    });
+</script>

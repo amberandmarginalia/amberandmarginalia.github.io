@@ -99,6 +99,10 @@ main {
     #rightSidebar {
         order: 3;
     }
+    .row, .rowcenter {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 /* FINITO */
 .header {
@@ -227,8 +231,8 @@ footer {
     flex-direction: column;
 }
 /* LINKS STYLING */
-a:link {color:bisque; text-decoration: none;}
-a:visited {color: bisque; text-decoration: none;}
+a:link {color: var(--lightest); text-decoration: none;}
+a:visited {color: var(--lightest); text-decoration: none;}
 a:hover {text-decoration: underline;}
 h1 {text-align: center;}
 

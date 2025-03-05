@@ -51,7 +51,7 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
-const s_widgetTitle = 'Leave a comment!';
+const s_widgetTitle = 'Under maintenance - not working';
 const s_nameFieldLabel = 'Signed';
 const s_websiteFieldLabel = 'Hailing from, (link optional)';
 const s_textFieldLabel = '';
