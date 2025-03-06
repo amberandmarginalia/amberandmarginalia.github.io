@@ -18,7 +18,7 @@ body {
     margin: 0;
     background-color: var(--light-colour);
     background-image: var(--bg-image);
-    cursor: url("...") 24 24, auto;
+    cursor: url("...") 28 28, auto;
 }
 /* contenitore per tutto il sito */
 #container {
