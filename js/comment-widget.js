@@ -17,7 +17,7 @@
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = '/styles/comment-widget1.css';
+const s_stylePath = '/styles/comment-widget.css';
 const s_formId = '1FAIpQLSdMT-_nuBH-cAPJ_S6T1KqL7PDTqnQ3lDGR8USmtWXeflMeww';
 const s_nameId = '94922203';
 const s_websiteId = '1098363536';
@@ -82,7 +82,7 @@ c_cssLink.rel = 'stylesheet';
 c_cssLink.href = s_stylePath;
 document.getElementsByTagName('head')[0].appendChild(c_cssLink);
 
-// HTML Form
+// HTML Form 
 const v_mainHtml = `
     <div id="c_inputDiv">
         <form id="c_form" onsubmit="c_submitButton.disabled = true; v_submitted = true;" method="post" target="c_hiddenIframe" action="https://docs.google.com/forms/d/e/${s_formId}/formResponse"></form>
@@ -109,6 +109,7 @@ const v_formHtml = `
 
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
 `;
+
 
 // Insert main HTML to page
 document.getElementById('c_widget').innerHTML = v_mainHtml;

@@ -1,33 +1,8 @@
-:root {
-    --dark-colour: #2d1e2d;
-    --light-colour: #3c3544;
-    --lightest: rgb(195, 182, 210);
-}
-body {
-    font-family: 'IM Fell';
-    font-style: regular;
-    color: antiquewhite;
-    margin: 0;
-    background-color: var(--light-colour);
-    background-image: url('/assets/mainbackground.png');
-}
-#container {
-    padding: 10px;
-    max-width: 1200px; /* larghezza massima del sito */
-    margin: 0 auto; /* centra il sito */
-}
-#flex {
-    display: flex;
-    flex-direction: row;
-}
 #guestbook {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: 100%; 
-}
-span {
-    cursor: help;
+    flex-basis: 100%;
 }
 .header {
     display: flex;
@@ -151,6 +126,7 @@ span {
 
 /* Input section */
 #c_inputDiv {
+    display: none; /* don't show input section */
     padding: 10px;
     background-color: var(--dark-colour);
     padding:  23px 10px 23px 10px;
