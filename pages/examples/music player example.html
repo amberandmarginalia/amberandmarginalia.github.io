@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Music Player example | Amber & Marginalia</title>
+  <link rel="icon" href="/assets/icons/icon32muted.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon32muted.png">
+  <link rel="stylesheet" href="/fonts.css">
+  <script src="/js/sparkles.js" defer></script>
+  <script src="/js/fireworks.js" defer></script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<style>
+    #playerimage {
+        width: 150px;
+        height: auto;
+        margin: 50px;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+    #playerimage:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+    <div class="songbox">
+        <img id="playerimage" src="..." alt="play song">
+        <audio id="songtoplay" src="..."></audio>
+        <div id="songinfo" style="display: none;">
+            <span id="songtitle">title</span>
+            by <span id="songartist">artist</span>
+        </div>
+    </div>
+    <script src="/js/musicplayer.js"></script>
+</body>
+
+</html>

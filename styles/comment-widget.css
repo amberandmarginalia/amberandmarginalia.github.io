@@ -173,7 +173,7 @@
     resize: none;
 }
 #c_submitButton {display: block;}
-#c_replyingText {color: var(--lightest);}
+#c_replyingText {color: var(--lightest-colour);}
 
 /* Comment section */
 .c-comment {
@@ -204,7 +204,7 @@
     text-transform: lowercase;
     color: var(--light-colour); /* color of the website link */
 }
-.c-site:hover {color: var(--lightest);} /* website link on hhover */
+.c-site:hover {color: var(--lightest-colour);} /* website link on hhover */
 .c-timestamp {
     float: right;
     opacity: 60%;
@@ -214,7 +214,7 @@
     margin-top: 10px;
     padding: 0;
     text-align: justify;
-    color: var(--lightest); /* comment text color */
+    color: var(--lightest-colour); /* comment text color */
 }
 
 /* Pagination */

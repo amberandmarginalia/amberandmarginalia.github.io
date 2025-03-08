@@ -8,7 +8,7 @@
     --dark-colour: #2d1e2d;
     --light-colour: #3c3544;
     --lighter-colour: #594f65;
-    --lightest: #c3b6d2;
+    --lightest-colour: #c3b6d2;
 }
 /* font, colore di sfondo e immagine */
 body {
@@ -231,8 +231,8 @@ footer {
     flex-direction: column;
 }
 /* LINKS STYLING */
-a:link {color: var(--lightest); text-decoration: none;}
-a:visited {color: var(--lightest); text-decoration: none;}
+a:link {color: var(--lightest-colour); text-decoration: none;}
+a:visited {color: var(--lightest-colour); text-decoration: none;}
 a:hover {text-decoration: underline;}
 h1 {text-align: center;}
 

@@ -9,5 +9,5 @@
     margin: 0 auto;
 }
 .buttonwall a img:hover {
-    box-shadow: 0px 0px 20px 1px var(--lightest);
+    box-shadow: 0px 0px 20px 1px var(--lightest-colour);
 }
