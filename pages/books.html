@@ -9,6 +9,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon32muted.png">
   <script src="/js/sparkles.js" defer></script>
   <script src="/js/fireworks.js" defer></script>
+  <script src="/js/pagesound.js" defer></script>
   <link rel="stylesheet" href="/fonts.css">
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/styles/books.css">
@@ -113,14 +114,4 @@
 
         <audio id="pagesound" src="/assets/audio/pagesound.mp3" type="audio/mp3"></audio>
 </body>
-
-<script>
-    const pagesound = document.getElementById('pagesound');
-    const books = document.querySelectorAll('.book');
-    books.forEach(book => {
-        book.addEventListener('click', () => {
-            pagesound.volume = 0.5; //0 no volume, 1 full volume
-            pagesound.play(); // Play sound on click
-        });
-    });
-</script>
+</html>

@@ -68,12 +68,14 @@ main {
     padding: 20px;
     width: fit-content;
     margin: auto;
+    border-radius: 15px;
 }
 .lightbox {
     background-color: var(--light-colour);
     padding: 20px;
     width: fit-content;
     margin: auto;
+    border-radius: 15px;
 }
 /* responsività mobile: su schermi più piccoli (max 800px di larghezza), le sidebar diventano blocchi a larghezza piena sotto il contenuto principale */
 @media only screen and (max-width: 800px) {
@@ -230,6 +232,8 @@ footer {
     display: flex;
     flex-direction: column;
 }
+#souvenir img {transition: 0.5s ease;}
+#souvenir img:hover {transform: scale(1.2);}
 /* LINKS STYLING */
 a:link {color: var(--lightest-colour); text-decoration: none;}
 a:visited {color: var(--lightest-colour); text-decoration: none;}

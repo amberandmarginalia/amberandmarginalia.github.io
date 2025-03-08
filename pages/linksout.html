@@ -11,8 +11,25 @@
   <script src="/js/fireworks.js" defer></script>
   <link rel="stylesheet" href="/fonts.css">
   <link rel="stylesheet" href="/styles.css">
-  <link rel="stylesheet" href="/styles/linksout.css">
 </head>
+
+<style>
+  .buttonwall {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
+    flex-wrap: wrap;
+    width: fit-content;
+    max-width: 840px;
+    margin: 0 auto;
+}
+.buttonwall a img {transition: 0.5s ease;}
+.buttonwall a img:hover {
+    box-shadow: 0px 0px 20px 1px var(--lightest-colour);
+    transform: scale(1.2);
+}
+</style>
 
 <!-- ADD A CENTER THINGY -->
 
@@ -23,8 +40,8 @@
   <div id="container">
   <div class="lightbox">
     
-    <h1>Links Out</h1>
     <h2 style="text-align: center;">Neighbouring Kingdoms</h2>
+    <p style="text-align: center; margin-top: -20px;" class="italictext">Places i love to visit.</p>
 
     <div class="buttonwall">
 
@@ -110,8 +127,8 @@
       <a href="https://princss.online/" target="_blank">
         <img src="/assets/buttons/neighbours/princss.online.png" alt="https://princss.online/">
       </a>
-      <a href="https://wichitalk.neocities.org.png" target="_blank">
-        <img src="/assets/buttons/neighbours/wichitalk.neocities.org.png" alt="https://wichitalk.neocities.org.png">
+      <a href="https://wichitalk.neocities.org" target="_blank">
+        <img src="/assets/buttons/neighbours/wichitalk.neocities.org.png" alt="https://wichitalk.neocities.org">
       </a>
       <a href="https://melxncholyman.neocities.org/" target="_blank">
         <img src="/assets/buttons/neighbours/melxncholyman.neocities.org.png" alt="https://melxncholyman.neocities.org/">

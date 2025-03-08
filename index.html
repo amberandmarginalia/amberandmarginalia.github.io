@@ -9,6 +9,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon32muted.png">
   <script src="/js/sparkles.js" defer></script>
   <script src="/js/fireworks.js" defer></script>
+  <script src="/js/pagesound.js" defer></script>
   <link rel="stylesheet" href="/fonts.css">
   <link rel="stylesheet" href="/styles.css">
 </head>
@@ -41,6 +42,7 @@
 
         <div class="scrollVertical" id="leftBox">
 
+            <!-- STATUS BAR -->
             <div id="statusBar">
               <div class="row" style="justify-content: space-between;">
               <p style="margin-bottom: 0px;"><span class="upperboldtext" style="font-size: x-large;">Status</span>: 
@@ -54,6 +56,7 @@
               </p>
             </div>
             <hr>
+            <!-- SOUVENIR -->
             <div id="souvenir">
               <h2 class="upperboldtext">Grab a souvenir!</h3>
                 <div id="buttons" class="row" style="justify-content: center; gap: 10px;">
@@ -67,6 +70,7 @@
               <p style="font-size: x-small;">Please don't hyperlink</p>
             </div>
             <hr>
+            <!-- PLAYLIST -->
             <div id="playlist">
               <h3><a href="pages/playlists.html" style="color: var(--lightest-colour);">Playlist</a> of the month:</h3>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7oETxQzyhte2AyhEcTvcgv?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -79,7 +83,7 @@
       <!-- MAIN -->
       <aside class="main"> <!-- content --> 
         <div id="centertext" style="text-align: center;">
-          <h1 class="upperboldtext" style="text-align: center;">Welcome!<br>(Site under construction)</h1>
+          <h1 class="upperboldtext" style="text-align: center;">Welcome!<!-- <br>(Site under construction) --></h1>
           <p class="italictext" style="text-align: center;">Hello traveler, you've entered the lands of Amber, welcome to my little corner of the internet!<br>
           This website is sort of a mix between a scrapbook and a portfolio of projects I've started (not necessarily ended though). This place is a love letter to the personal web, a castle of golden memories. A museum dedicated to preserving, the little things left in the margins.</p>
           <p style="font-size: large;"><span class="upperboldtext">Warning:</span> there are hidden wonders around!<br><span style="font-size: medium;">Almost everything in here is clickable or changes on hover, there are many secrets to be found!</span></p>
@@ -111,7 +115,7 @@
               <a href="/pages/about.html">About</a><br>
               <a href="/pages/books.html">Latest Reads</a><br>
               <a href="/pages/foryou.html">For You</a><br>
-              <a href="/pages/linksout.html">Links Out</a><br>
+              <a href="/pages/linksout.html">Neighbouring Kingdoms</a><br>
               <a href="/pages/resources.html">Credits and Resources</a><br>
             </nav>
           </div>
@@ -123,8 +127,9 @@
           <!-- UPDATES TAB -->
           <iframe src="/pages/iframes/updates.html" style="height: 270px; width: 100%; border: none;" id="updates"></iframe>
 
-          <style> #playlists:hover img{height: 110px !important;} #playlists {display: flex;; justify-content: center;}</style>
-          <div id="playlists">
+          <!-- LITTLE GUY (featured song?)-->
+          <style> #reads:hover img{height: 110px !important;} #reads {display: flex;; justify-content: center;}</style>
+          <div id="reads">
             <img src="/assets/guys/readingRabbit.png"
             style="height: 100px; cursor: pointer;"
             data-sound="/assets/audio/pagesound.mp3"
@@ -142,6 +147,7 @@
     </footer>
   </div>
 
+  <!-- some extra random stuff -->
   <audio id="pagesound" src="/assets/audio/pagesound.mp3" type="audio/mp3"></audio>
 
 </body>
@@ -163,30 +169,5 @@
     height: 220px;
   }
 </style>
-
-<script> /* MAKES SOUND ON IMAGE CLICK */
-  const pagesound = document.getElementById('pagesound');
-
-  const guestbook = document.querySelector('#guestbook');
-  const book = guestbook.querySelector('img');
-  const guestlink = book.dataset.link;
-  guestbook.addEventListener('click', () => {
-      pagesound.play(); // Play sound on click
-      pagesound.addEventListener('ended', () => {
-        window.location.href = guestlink; // Navigate to the link
-      })
-  });
-
-  const playlist = document.getElementById('playlists');
-  const readrab = playlist.querySelector('img');
-  const playlistlink = readrab.dataset.link;
-  playlist.addEventListener('click', () => {
-    pagesound.play();
-    pagesound.addEventListener('ended', () => {
-      window.location.href = playlistlink;
-    })
-  })
-
-</script>
 
 </html>
