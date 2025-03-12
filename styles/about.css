@@ -1,16 +1,8 @@
-:root {
-    /* queste sono variabili*/
-    --header-image: url('/assets/header.png');
-    --bg-image: url('/assets/mainbackground.png');
-    --dark-colour: #2d1e2d;
-    --light-colour: #3c3544;
-    --lightest-colour: rgb(195, 182, 210);
-}
 #favourites {
     max-width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 10px auto;
+    margin: 0px auto;
     background-color: var(--dark-colour);
 }
 #favourites > * {
@@ -28,6 +20,11 @@
     height: auto;
     align-self: flex-end;
 }
-.sizetest {
-    width: 230px;
+#blinkies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
 }
+#blinkies img {transition: 0.5s ease;}
+#blinkies img:hover {transform: scale(1.2);}
