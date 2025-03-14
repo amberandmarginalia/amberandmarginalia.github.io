@@ -32,6 +32,9 @@
         order: 1;
         margin-bottom: 10px;
     }
+    #commentSection iframe {
+        max-width: 100% !important;
+    }
     #guestbook {
         order: 2;
         margin-bottom: 10px;

@@ -29,6 +29,7 @@ summary {
     cursor: pointer;
     display: inline; 
     color: transparent;
+    padding: 5px;
 }
 p {
     color: antiquewhite;

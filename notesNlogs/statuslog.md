@@ -1,4 +1,6 @@
 
+- 14 mar 2025 11:46 - ugh
+    - i really should be studying rn
 - 12 mar 2025 21:49 - extatic
     - i got my 18 moments of beautiful friendship today
 - 11 mar 2025 12:13 - migraine
