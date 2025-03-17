@@ -11,7 +11,7 @@
 .cardeven, .cardodd {
     border: solid 1px transparent;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: min-content;
     height: max-content;
     margin: 10px;
