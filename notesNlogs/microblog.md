@@ -1,1 +1,3 @@
+
+- 27 mar 10:35 9:45: i'm just gonna say that it's raining and i lost the bus so i got rained on and i can't even go to class. i'll let you deduce how i feel rn. also yes i'm still reading Martyr! by Kaveh Akbar and it's so crazy good. I just really love his writing style so muCH.
 - 12 mar 2025 21:40: i just came back from a friend's house and i never had a more fun d&d session. we're playing a side quest where we're catapulted in a fantasy world and we have to guess our class and stats based on clues we get exploring and we've been straight up laughing for four hours. we never had so much collaboration and shenanigans at the table and i really hope the vibes stay like this next week!

@@ -1,4 +1,6 @@
 
+- 27 mar 2025 10:37 - idk man
+    - i feel the big bads approaching
 - 14 mar 2025 11:46 - ugh
     - i really should be studying rn
 - 12 mar 2025 21:49 - extatic
