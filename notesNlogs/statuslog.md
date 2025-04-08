@@ -1,4 +1,6 @@
 
+- 8 apr 2025 13:26 - busy
+    - i have to do so many things :(
 - 27 mar 2025 10:37 - idk man
     - i feel the big bads approaching
 - 14 mar 2025 11:46 - ugh
