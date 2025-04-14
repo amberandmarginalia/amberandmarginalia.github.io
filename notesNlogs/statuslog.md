@@ -1,4 +1,6 @@
 
+- 14 apr 2025 14:55 - excited
+    - i'm heading to a murder mistery at the library!!
 - 8 apr 2025 13:26 - busy
     - i have to do so many things :(
 - 27 mar 2025 10:37 - idk man
