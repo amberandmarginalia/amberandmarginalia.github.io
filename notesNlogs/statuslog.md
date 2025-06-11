@@ -1,6 +1,8 @@
 
+- 11 jun 2025 23:47 - destroyed
+    - exam season means friends can't hang out ಥ﹏ಥ
 - 9 mag 2025 11:32 - sad
-    - dnd campaign finished
+    - dnd campaign finished :(
 - 14 apr 2025 14:55 - excited
     - i'm heading to a murder mistery at the library!!
 - 8 apr 2025 13:26 - busy
