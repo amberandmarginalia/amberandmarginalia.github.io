@@ -1,6 +1,8 @@
 
+- 26 jun 2025 10:53 - conspirating
+    - i'm trying to get all my friends to go to the rpg-fest
 - 11 jun 2025 23:47 - destroyed
-    - exam season means friends can't hang out ಥ﹏ಥ
+    - exam season means friends can't hang out .·°՞(˃ ᗝ ˂)՞°·.
 - 9 mag 2025 11:32 - sad
     - dnd campaign finished :(
 - 14 apr 2025 14:55 - excited
