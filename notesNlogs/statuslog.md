@@ -1,4 +1,10 @@
 
+- 15 jul 2025 11:54 - exausted
+    - had a tetanus shot and can't move my arm
+- 13 jul 2025 10:20 - tired
+    - had the best time at the celtic festival last night
+- 11 jul 2025 11:38 - excited
+    - me and only a few of my friends are goint to the rpg-fest and we'll have a blast
 - 26 jun 2025 10:53 - conspirating
     - i'm trying to get all my friends to go to the rpg-fest
 - 11 jun 2025 23:47 - destroyed
