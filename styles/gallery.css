@@ -17,6 +17,7 @@
     margin: 10px;
     background-color: whitesmoke;
     padding: 20px 20px 20px 20px;
+    box-shadow: 12px 10px 24px -1px rgba(0,0,0,0.8);
 }
 .cardeven:hover {transform: rotate(-3deg);}
 .cardodd:hover {transform: rotate(+3deg);}
