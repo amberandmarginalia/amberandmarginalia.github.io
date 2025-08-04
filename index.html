@@ -46,14 +46,14 @@
             <div id="statusBar">
               <div class="row" style="justify-content: space-between;">
                 <p style="margin-bottom: 0px; z-index: 2;"><span class="upperboldtext" style="font-size: x-large;">Status</span>: 
-                  exausted <!-- status text -->
+                  cross <!-- status text -->
                 </p>
                 <span style="text-align: right; color: var(--lighter-colour); margin-bottom: 0px; z-index: 1;">
-                  15 jul 2025 11:54 <!-- status date -->
+                  4 aug 2025 23:42 <!-- status date -->
                 </span>
               </div>
               <p style="margin-top: 5px; color: var(--lightest-colour);">
-                had a tetanus shot and can't move my arm
+                i'm very mad at some people and trying not to make a scene
               </p>
             </div>
             <hr>
@@ -73,7 +73,7 @@
             <hr>
             <!-- PLAYLIST -->
             <div id="playlist">
-              <h3><a href="pages/playlists.html" style="color: var(--lightest-colour);">Playlist</a> of the month:</h3>
+              <h3><a href="pages/playlists.html" style="color: var(--lightest-colour);">Playlist</a> <span title="july 2025">of the month:</span></h3>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7MvRgwfaMYo1gHvfFPFVox?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               
             </div>
@@ -138,13 +138,21 @@
           <!-- UPDATES TAB -->
           <iframe src="/pages/iframes/updates.html" style="height: 270px; width: 100%; border: none;" id="updates"></iframe>
 
-          <!-- LITTLE GUY (featured song?)-->
-          <style> #reads:hover img{height: 110px !important;} #reads {display: flex;; justify-content: center;}</style>
+          <!-- LITTLE GUY (book page rabbit)-->
+<!--           <style> #reads:hover img{height: 110px !important;} #reads {display: flex; justify-content: center;}</style>
           <div id="reads">
             <img src="/assets/guys/readingRabbit.png"
             style="height: 100px; cursor: pointer;"
             data-sound="/assets/audio/pagesound.mp3"
             data-link="/pages/books.html">
+          </div> -->
+
+          <style> #gallery:hover img{transform: rotate(-3deg) !important}</style>
+          <div id="gallery">
+            <img src="/assets/guys/galleylink.png"
+            style="width:100%; cursor: pointer;"
+            data-sound="/assets/audio/pagesound.mp3"
+            data-link="/pages/gallery.html">
           </div>
 
         </div>

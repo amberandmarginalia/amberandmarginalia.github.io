@@ -1,4 +1,8 @@
 
+- 4 aug 2025 23:42 - cross
+    - i'm very mad at some people and trying not to make a scene
+- 19 jul 2025 22:52 - hehehe
+    - i'm drawing little guys
 - 15 jul 2025 11:54 - exausted
     - had a tetanus shot and can't move my arm
 - 13 jul 2025 10:20 - tired

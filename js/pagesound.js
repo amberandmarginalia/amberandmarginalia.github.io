@@ -26,6 +26,21 @@ if (reads) {
         });
     });
 };
+
+/* GALLERY PAGE LINK */
+const gallery = document.getElementById('gallery');
+if (gallery) {
+    const readrab = gallery.querySelector('img');
+    const gallerylink = readrab.dataset.link;
+    gallery.addEventListener('click', () => {
+        pagesound.play();
+        pagesound.addEventListener('ended', () => {
+            window.location.href = gallerylink;
+        });
+    });
+};
+
+
 /* BOOK REVIEW PAGE */
 const books = document.querySelectorAll('.book');
 if (books.length > 0) {
