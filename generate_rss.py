@@ -1,6 +1,6 @@
 import os, re, datetime, email.utils
 
-BLOG_DIR = "blog"
+BLOG_DIR = "pages/blog"
 SITE_URL = "https://amberandmarginalia.github.io"  # <-- change this
 
 def read_file(path):
