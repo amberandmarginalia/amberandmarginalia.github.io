@@ -19,7 +19,7 @@ body {
     margin: 0;
     background-color: var(--light-colour);
     background-image: var(--bg-image);
-    cursor: url("...") 28 28, auto;
+    cursor: url("/assets/icons/cursor.png") 28 28, auto;
 }
 /* contenitore per tutto il sito */
 #container {
@@ -41,6 +41,7 @@ main {
     background-color: var(--dark-colour);
     padding: 20px;
     border-radius: 5px;
+    cursor: url("/assets/icons/cursor.png") 28 28, auto;
 }
 .row {
     display: flex;

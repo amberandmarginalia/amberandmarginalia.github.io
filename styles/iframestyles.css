@@ -10,7 +10,9 @@
     --bg-image: url('/assets/mainbackground.png');
     --dark-colour: #2d1e2d;
     --light-colour: #3c3544;
-    --lightest-colour: rgb(195, 182, 210);
+    --lighter-colour: #594f65;
+    --lightest-colour: #c3b6d2;
+    --gray-goose: #969696;
 }
 body {
     overflow-y: hidden;
@@ -22,7 +24,8 @@ h1 {text-align: center;}
 .container {
     width: auto;
     background-color: var(--light-colour);
-    border: 2px solid #444;
+    /* border: 2px solid #444; */
+    border: 5px double var(--lighter-colour);
     padding: 0px 15px 5px 15px;
     margin: 0 auto;
     text-align: center;
