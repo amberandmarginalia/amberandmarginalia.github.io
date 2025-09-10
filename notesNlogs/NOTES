@@ -1,2 +1,9 @@
 icon: bug (bee?) preserved in amber
 about inspired by firt couple lines of witchsomething (in linksout)
+
+default header heights:
+    - h1: 2rem
+    - h2: 1.5rem
+    - h3: 1.17rem
+    - h4: 1.33rem
+    - h5: 1rem

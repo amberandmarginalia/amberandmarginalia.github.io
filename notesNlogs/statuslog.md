@@ -1,4 +1,6 @@
 
+- 8 sep 2025 02:32 - eepy
+    - worked on blog index and post prototype all day
 - 4 aug 2025 23:42 - cross
     - i'm very mad at some people and trying not to make a scene
 - 19 jul 2025 22:52 - hehehe

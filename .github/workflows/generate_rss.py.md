@@ -1,5 +1,7 @@
 import os, re, datetime, email.utils
 
+/* this should be in the main directory, where index.html is */
+
 BLOG_DIR = "pages/blog"
 SITE_URL = "https://amberandmarginalia.github.io"  # <-- change this
 

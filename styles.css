@@ -9,6 +9,7 @@
     --light-colour: #3c3544;
     --lighter-colour: #594f65;
     --lightest-colour: #c3b6d2;
+    --gray-goose: #969696;
 }
 /* font, colore di sfondo e immagine */
 body {
@@ -105,6 +106,9 @@ main {
         flex-direction: column;
         align-items: center;
     }
+    #welcomeleftguy {margin-left: 0px; align-self: center;}
+    #welcomerightguy {margin-right: 0px; align-self: center;}
+    #welcomeheader h1 {margin-top: 0; margin-bottom: 0;}
 }
 /* FINITO */
 .header {
@@ -126,6 +130,20 @@ main {
     .header a:hover {
         opacity: 0.9; /* Slightly fade the image on hover */
     }
+/* welcome header */
+#welcomeheader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--dark-colour);
+    border-top: 5px double var(--lighter-colour);
+    border-bottom: 5px double var(--lighter-colour);
+}
+#welcomeheader h1 {flex-grow: 1;}
+#welcomeheader img {height: 4rem;}
+#welcomeleftguy {margin-left: 20px; align-self: center;}
+#welcomerightguy {margin-right: 20px; align-self: center;}
 /*left sidebar*/
 #leftSidebar {
     display: flex;
@@ -166,6 +184,7 @@ main {
     padding: 20px;
     max-width: 100%;
     height: 100%;
+    border-radius: 15px;
 }
 .scrollVertical {
     padding:  23px 10px 23px 10px;
