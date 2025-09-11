@@ -19,7 +19,7 @@ body {
     margin: 0;
     background-color: var(--light-colour);
     background-image: var(--bg-image);
-    cursor: url("/assets/icons/cursor.png") 28 28, auto;
+    cursor: url("/assets/icons/cursor64.png") 3 3, auto;
 }
 /* contenitore per tutto il sito */
 #container {
@@ -41,7 +41,6 @@ main {
     background-color: var(--dark-colour);
     padding: 20px;
     border-radius: 5px;
-    cursor: url("/assets/icons/cursor32.png") 3 3, auto;
 }
 .row {
     display: flex;
@@ -255,9 +254,10 @@ footer {
 #souvenir img {transition: 0.5s ease;}
 #souvenir img:hover {transform: scale(1.2);}
 /* LINKS STYLING */
+a, #guestbook img, #gallery img {cursor: url("/assets/icons/pointer64.png") 5 5, pointer !important;}
 a:link {color: var(--lightest-colour); text-decoration: none;}
 a:visited {color: var(--lightest-colour); text-decoration: none;}
-a:hover {text-decoration: underline;}
+a:hover {text-decoration: underline; }
 h1 {text-align: center;}
 
 /* horizontal scrollbar */

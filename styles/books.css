@@ -23,6 +23,7 @@
     /* height: 320px; */
     box-shadow: 0px 0px 70px 1px var(--lightest-colour);
     margin: 0 auto;
+    cursor: url("/assets/icons/pointerstar64.png") 5 5, pointer !important;
 }
 
 summary {
@@ -30,6 +31,7 @@ summary {
     display: inline; 
     color: transparent;
     padding: 5px;
+    cursor: url("/assets/icons/pointerstar64.png") 5 5, pointer !important;
 }
 p {
     color: antiquewhite;
