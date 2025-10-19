@@ -1,4 +1,6 @@
 
+- 19 oct 2025 22:19 - cool
+    i journal now i guess
 - 8 sep 2025 02:32 - eepy
     - worked on blog index and post prototype all day
 - 4 aug 2025 23:42 - cross

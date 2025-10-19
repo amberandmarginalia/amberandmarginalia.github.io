@@ -16,6 +16,7 @@
 }
 body {
     overflow-y: hidden;
+    cursor: url("/assets/icons/cursor64.png") 3 3, auto;
 }
 a:link {color:bisque; text-decoration: none;}
 a:visited {color: bisque; text-decoration: none;}
