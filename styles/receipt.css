@@ -1,0 +1,129 @@
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background: var(--lightest-colour);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      padding: 6px 8px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    #receipt {
+      background: white;
+      width: 340px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      line-height: 1.4;
+      color: #111;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .dotted-line {
+      border-top: 1px dotted #000;
+      margin: 6px 0;
+    }
+
+    .columns, .song, .summary-line {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .columns span, .song span, .summary-line span {
+      flex: 1;
+    }
+
+    .columns span:nth-child(1), .song span:nth-child(1),
+    .columns span:nth-child(3), .song span:nth-child(3) {
+      flex: 0.6; /* QTY and ATM narrower */
+    }
+
+    .columns span:nth-child(2), .song span:nth-child(2) {
+      flex: 2.8; /* ITEM takes most space */
+    }
+
+    .columns {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .summary-line {
+      font-weight: bold;
+      margin: 2px 0;
+    }
+
+    .footer p {
+      text-align: left;
+      margin: 2px 0;
+    }
+
+    .footer p.centered {
+      text-align: center;
+    }
+
+    #receiptHeader p {
+      margin: 0; /* reduce spacing between customer & date */
+    }
+
+    .barcode {
+      display: block;
+      margin: 10px auto 2px;
+      width: 240px;
+      height: 60px;
+    }
+
+    .link {
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      word-wrap: break-word;
+      margin-bottom: 10px;
+    }
+
+    #download {
+      margin-top: 15px;
+      background: var(--lighter-colour);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    #download:hover {
+      background: var(--lightest-colour);
+    }

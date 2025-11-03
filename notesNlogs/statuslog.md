@@ -1,4 +1,6 @@
 
+- 2 nov 2025 12:38 - insane
+    - cr4 is sooo good folks
 - 23 oct 2025 23:07 - seeing shrimp colours
     - doing monochrome concept art must be one of the rings of hell
 - 19 oct 2025 22:19 - cool
