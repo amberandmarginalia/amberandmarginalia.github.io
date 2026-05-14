@@ -1,0 +1,42 @@
+1. Utente registrato:
+    1.1 nickname - stringa {id1}
+    1.2 data di registrazione - data
+
+2. Post (annuncio di oggetto)
+    2.1 descrizione - stringa
+    2.2 categoria alla quale appartiene ???
+    2.3 prezzo di vendita - TOLTO
+    2.4 metodi di pagamento accettati (bonifico o carta di credito) -> 2 attributi booleani
+    2.5 se è nuovo oppure // generalizzazione disgiunta e completa
+        2.5.1 garanziaInAnni - intero > 2
+    2.6 usato
+        2.6.1 garanziaInAnni - intero > 0 [0,1]
+        2.6.2 condizioni - Condizioni
+    2.7 se è all'asta o // generalizzazione disgiunta e completa
+        2.7.1 prezzo iniziale dell'asta  - reale maggiore di 0
+        2.7.2 ammontare del singolo rialzo - reale maggiore di 0
+        2.7.3 istante di scasenza dell'asta - dataOra
+    2.8 asta conclusa
+        2.8.1 bid vincitore (se esiste) - Bid (v. req. 3)
+        2.8.2 prezzo finale - reale > 0 // calcolabile
+    2.9 in vendita immediata
+        2.9.1 prezzo di vendita - reale > 0
+
+3. Bid
+    3.1 istante di proposta - dataOra
+    3.2 utente offerente (bidder) - Utente (v. req. 1)
+    3.3 oggetto con asta relativo - Post con asta
+
+Tipi di dato:
+- Condizioni: 
+    enumerativo {ottimo, buono, discreto, da sistemare}
+
+Requisiti delle funzionalità:
+SISTEMA:
+    - Calcolare il prezzo finale del bid:
+        dato un bid, e risalendo al post e alla lista di bid creati precedentemente, bisogna poter calcolare il prezzo finale di questo bid sommando al prezzo iniziale l'ammontare del singolo rialzo tante volte tanti quanti sono i bid precedenti. - calcola_prezzo_bid(bid) : reale>0
+    - Chiudere l'asta:
+        l'asta si chiude automaticamente al momento della scadenza e l'ultimo utente che ha effettuato un bid si aggiudica l'oggetto-
+UTENTE: 
+    - Proporre un bid
+    - Acquistare un oggetto "compralo subito"
