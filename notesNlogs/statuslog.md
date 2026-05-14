@@ -1,4 +1,8 @@
+- date time - emotion
+    - status
 
+- 14 may 2026 22:38 - insane
+    - cr4 is still so good folks
 - 2 nov 2025 12:38 - insane
     - cr4 is sooo good folks
 - 23 oct 2025 23:07 - seeing shrimp colours
